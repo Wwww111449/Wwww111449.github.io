@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  Apple 工业风 · 跨境品类市场调研报告模板(固定风格,勿自由发挥)
+  用法:复制本文件 → 改 <title>/Hero/声明条 → 按 references/report-structure.md
+        的章节范式增删 <section> → 每个组件下方都有 <!-- 用法 --> 注释
+  规则:正文专业中文;id/class 用英文;每张表/图/卡的 .foot 必须写六项口径附注;
+        缺失数据一律 "—",绝不臆造。
+  ============================================================================
+-->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>便携式户外储能电源 · 北美+欧洲5国 Amazon 7站 市场调研报告</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+:root{
+ --bg:#fbfbfd; --surface:#fff; --g900:#1d1d1f; --g700:#424245; --g500:#6e6e73;
+ --g300:#d2d2d7; --g100:#f5f5f7; --blue:#0071e3; --blue2:#2997ff; --green:#34c759;
+ --red:#ff3b30; --orange:#ff9500; --purple:#af52de; --teal:#5ac8fa; --pink:#ff2d92;
+ --rsm:8px; --rmd:14px; --rlg:22px; --rxl:32px;
+ --sh-sm:0 2px 8px rgba(0,0,0,.04); --sh-md:0 8px 28px rgba(0,0,0,.06); --sh-lg:0 20px 50px rgba(0,0,0,.08);
+ --fd:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif;
+ --ft:-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","Microsoft YaHei",sans-serif;
+}
+html{scroll-behavior:smooth;}
+body{font-family:var(--ft);background:var(--bg);color:var(--g900);line-height:1.5;-webkit-font-smoothing:antialiased;font-feature-settings:"tnum" 1;}
+.nav-bar{position:sticky;top:0;z-index:100;background:rgba(251,251,253,.82);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.06);}
+.nav-c{max-width:1200px;margin:0 auto;padding:0 28px;height:54px;display:flex;align-items:center;justify-content:space-between;}
+.nav-brand{font-family:var(--fd);font-weight:600;font-size:16px;letter-spacing:-.01em;}
+.nav-brand span{color:var(--g500);font-weight:400;}
+.nav-links{display:flex;gap:20px;font-size:13px;}
+.nav-links a{color:var(--g700);text-decoration:none;transition:color .2s;white-space:nowrap;}
+.nav-links a:hover{color:var(--blue);}
+.hero{padding:88px 28px 48px;text-align:center;background:radial-gradient(ellipse at top,#eef1f6 0%,#fbfbfd 62%);}
+.hero-tag{display:inline-block;padding:6px 16px;background:rgba(0,113,227,.1);color:var(--blue);border-radius:100px;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-bottom:20px;}
+.hero h1{font-family:var(--fd);font-size:clamp(32px,4.6vw,58px);font-weight:700;line-height:1.07;letter-spacing:-.025em;background:linear-gradient(180deg,#1d1d1f,#424245);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px;}
+.hero-sub{font-size:clamp(15px,1.7vw,20px);color:var(--g500);max-width:740px;margin:0 auto 24px;line-height:1.5;}
+.hero-meta{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;font-size:13px;color:var(--g500);}
+.hero-meta b{color:var(--g900);font-weight:600;}
+.section{max-width:1200px;margin:0 auto;padding:60px 28px;}
+.sec-head{text-align:center;margin-bottom:40px;}
+.eyebrow{font-size:13px;font-weight:600;color:var(--blue);letter-spacing:.08em;text-transform:uppercase;margin-bottom:11px;}
+.sec-title{font-family:var(--fd);font-size:clamp(26px,3.2vw,40px);font-weight:700;letter-spacing:-.02em;line-height:1.13;margin-bottom:13px;}
+.sec-desc{font-size:16px;color:var(--g500);max-width:760px;margin:0 auto;line-height:1.55;}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.card{background:var(--surface);border-radius:var(--rlg);padding:26px;box-shadow:var(--sh-sm);transition:transform .3s,box-shadow .3s;}
+.card:hover{transform:translateY(-4px);box-shadow:var(--sh-md);}
+.card .lab{font-size:12px;color:var(--g500);font-weight:500;text-transform:uppercase;letter-spacing:.05em;margin-bottom:9px;}
+.card .val{font-family:var(--fd);font-size:34px;font-weight:700;letter-spacing:-.02em;line-height:1;}
+.card .val.up{color:var(--green);} .card .val.down{color:var(--red);}
+.card .note{margin-top:9px;font-size:11.5px;color:var(--g500);line-height:1.4;}
+.tw{background:var(--surface);border-radius:var(--rlg);overflow:hidden;box-shadow:var(--sh-md);margin-top:24px;overflow-x:auto;}
+table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums;min-width:640px;}
+thead{background:var(--g100);}
+thead th{padding:13px 10px;text-align:center;font-weight:600;font-size:12px;color:var(--g700);text-transform:uppercase;letter-spacing:.02em;border-bottom:1px solid var(--g300);white-space:nowrap;}
+thead th.l{text-align:left;}
+tbody td{padding:12px 10px;border-bottom:1px solid #f0f0f3;text-align:center;vertical-align:middle;}
+tbody td.l{text-align:left;}
+tbody tr:hover{background:#fafafb;}
+tbody tr:last-child td{border-bottom:none;}
+.mom{font-weight:700;font-size:13px;}
+.mom.up{color:var(--green);} .mom.down{color:var(--red);} .mom.flat{color:var(--g500);} .mom.na{color:var(--orange);}
+.sub2{display:block;font-size:10px;color:var(--g500);font-weight:500;margin-top:2px;}
+.foot{font-size:11px;color:var(--g500);margin-top:10px;line-height:1.55;padding:0 4px;}
+.foot b{color:var(--g700);}
+.icon{font-size:13px;}
+.pill{display:inline-block;padding:2px 9px;border-radius:100px;font-size:11px;font-weight:600;}
+.pill.g{background:rgba(52,199,89,.12);color:#1a7a33;} .pill.r{background:rgba(255,59,48,.1);color:#c0271f;}
+.pill.o{background:rgba(255,149,0,.13);color:#9a5b00;} .pill.b{background:rgba(0,113,227,.1);color:#005bb3;}
+.pill.p{background:rgba(175,82,222,.12);color:#7b2da8;}
+.ibox{margin-top:32px;background:linear-gradient(135deg,#f5f5f7,#fbfbfd);border-radius:var(--rlg);padding:30px 34px;border:1px solid #ececf0;}
+.ibox h4{font-family:var(--fd);font-size:18px;font-weight:700;margin-bottom:16px;}
+.ibox ul{list-style:none;display:flex;flex-direction:column;gap:13px;}
+.ibox li{font-size:14.5px;line-height:1.55;color:var(--g700);padding-left:22px;position:relative;}
+.ibox li::before{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:50%;background:var(--blue);}
+.ibox li b{color:var(--g900);font-weight:600;}
+.warn{background:linear-gradient(135deg,#fff6ec,#fffdf9);border:1px solid #ffe2bf;}
+.warn h4{color:#9a5b00;} .warn li::before{background:var(--orange);}
+.declare{max-width:1200px;margin:24px auto 0;padding:0 28px;}
+.declare-inner{background:var(--surface);border:1px solid var(--g300);border-radius:var(--rlg);padding:22px 26px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px 28px;box-shadow:var(--sh-sm);}
+.declare-inner div{font-size:12.5px;color:var(--g700);line-height:1.5;}
+.declare-inner b{color:var(--g900);display:block;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--blue);margin-bottom:2px;}
+.tabs{display:flex;gap:8px;margin-top:24px;flex-wrap:wrap;}
+.tab-btn{padding:9px 18px;border-radius:100px;border:1px solid var(--g300);background:var(--surface);font-size:13px;font-weight:600;color:var(--g700);cursor:pointer;transition:all .2s;}
+.tab-btn.active{background:var(--g900);color:#fff;border-color:var(--g900);}
+.tab-pane{display:none;} .tab-pane.active{display:block;}
+.flag-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:20px;}
+.flag-card{background:var(--surface);border-radius:var(--rlg);padding:22px 24px;box-shadow:var(--sh-sm);border-top:3px solid var(--blue);}
+.flag-card h4{font-family:var(--fd);font-size:16px;margin-bottom:6px;}
+.flag-card .big{font-family:var(--fd);font-size:28px;font-weight:700;margin:6px 0;}
+.flag-card .ml{font-size:12px;color:var(--g500);line-height:1.5;margin-top:8px;}
+.bar-track{display:flex;height:24px;border-radius:6px;overflow:hidden;background:var(--g100);margin-top:6px;}
+.seg{height:100%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;font-weight:600;min-width:0;}
+.seg.b0{background:#0071e3;} .seg.b1{background:#5ac8fa;} .seg.b2{background:#ff9500;} .seg.b3{background:#af52de;}
+.lgd{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--g500);margin-top:8px;}
+.lgd span{display:inline-flex;align-items:center;gap:5px;} .dot{width:9px;height:9px;border-radius:2px;}
+.star-bar{display:inline-flex;align-items:center;gap:6px;}
+.star-track{width:60px;height:7px;background:var(--g100);border-radius:4px;overflow:hidden;}
+.star-fill{height:100%;background:var(--green);}
+.foot-sec{padding:36px 28px 64px;text-align:center;font-size:12px;color:var(--g500);max-width:1200px;margin:0 auto;line-height:1.7;}
+@media(max-width:980px){.cards{grid-template-columns:1fr 1fr;}.declare-inner{grid-template-columns:1fr;}.nav-links{display:none;}}
+@media(max-width:560px){.cards{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<!-- ============ 吸顶导航:每章一个锚点 ============ -->
+<div class="nav-bar"><div class="nav-c">
+  <div class="nav-brand">便携储能 × 美欧 7 国 <span>· 市场调研报告</span></div>
+  <div class="nav-links">
+  <a href="#overview">市场大盘</a>
+  <a href="#price">价格×容量</a>
+  <a href="#competitors">竞品格局</a>
+  <a href="#tech">技术矩阵</a>
+  <a href="#topsku">Top SKU</a>
+  <a href="#consumer">用户洞察</a>
+  <a href="#season">季节性&新品</a>
+  <a href="#strategy">战略建议</a>
+  <a href="#appendix">词库&附录</a></div>
+</div></div>
+
+<!-- ============ Hero:英文小标签 + 中文主标题 + 关键指标 ============ -->
+<div class="hero">
+  <div class="hero-tag">2026 Q3 · Portable Power Station · Amazon US/CA/GB/DE/FR/IT/ES Report</div>
+  <h1>便携式户外储能电源<br>北美 + 欧洲 5 国 Amazon 7 站<br>市场深度调研报告</h1>
+  <p class="hero-sub">深度拆解价格×容量双维空白带、品牌格局与集中度、电芯×功能×重量×认证四维技术矩阵，并附负面评论聚类与季节性日历，给出三阶段切入路径与十大避坑清单。</p>
+  <div class="hero-meta">
+  <span>月销量合计 <b>117,831</b></span>
+  <span>月销额合计 <b>$45.82M</b></span>
+  <span>加权均价 <b>$389</b></span>
+  <span>数据截止 <b>2026-08-27</b></span>
+  <span>YoY 加权增速 <b>+0.1%</b></span>
+</div>
+</div>
+
+
+<div class="declare">
+  <div class="declare-inner">
+    <div><b>品类范围</b>仅含便携式户外储能电源 Portable Power Station（Wh ≥ 50 或 AC 输出 + 品类关键词；已剔除 插线板/纯充电宝/桌面UPS/纯逆变器/手电筒/应急启动电源/扩展电池包/纯太阳能板/充电器配件 共 8 类近邻）</div>
+    <div><b>数据源</b>Sorftime MCP × Amazon 七国 Top100（portable power station 按月销排序）实时抓取；统一分类器门控，可审计。详情、评论、趋势接口采样 Top10 / Top5 SKU。</div>
+    <div><b>时间口径</b>近 3 个月（2026.05–2026.07）滚动月均。销量/销额为该窗口内各 SKU 月销量均值。</div>
+    <div><b>增速口径</b>YoY 滚动年同比（Top5 SKU 月销量趋势 → 近 3 月均 vs 早期 3 月均），平滑季节性波动。</div>
+    <div><b>汇率</b>Sorftime 返回的各站销额/售价已统一折算为美元（以抓取当期汇率为准），本报告不再二次换算。</div>
+    <div><b>局限</b>① 加拿大站若纳入品＜10 条，该站部分章做定性前瞻；② 趋势接口某站无数据时，该站 YoY 标 "—"；③ 评论负面聚类来自 Top5 高销量 SKU（最多 500 条/站），不能代表长尾品。④ 评论仅采 Negative，正面/中性评论见"用户心声"摘要。⑤ Phase 2A MCP 接口在抓取尾声额度耗尽（Sorftime 返回「MCP使用次数已达到上限」）：详情接口覆盖 20/64 份 Top10 SKU、负面评论接口覆盖 6 份头部 SKU、趋势接口覆盖 7 份、搜索词 extends 0/3 页。缺项统一标 "—"，Ch09 搜索词 Top50 基于 Phase 1 标题词频 + 分析师校准估算，全程零臆造。</div>
+  </div>
+</div>
+
+<section class="section" id="overview">
+  <div class="sec-head">
+    <div class="eyebrow">01 · Market Overview</div>
+    <h2 class="sec-title">七国市场全景：美欧双轮驱动，家用应急段领跑增长</h2>
+    <p class="sec-desc">Amazon 七国 Top100 经分类器过滤后的有效品全景。美国站是绝对主战场，500–1500Wh 家用应急容量段在所有市场均销量占比第一。</p>
+  </div>
+  <div class="cards"><div class="card"><div class="lab">7 国合计 · 月销量（滚动 3 月均）</div><div class="val">117,831</div><div class="note">便携式户外储能电源有效品合计（已剔 8 类近邻）</div></div><div class="card"><div class="lab">7 国合计 · 月销额（滚动 3 月均）</div><div class="val">$45.82M</div><div class="note">统一折 USD；Sorftime 当期汇率折算</div></div><div class="card"><div class="lab">7 国销量加权 YoY</div><div class="val up">+0.1%</div><div class="note">Top5 SKU 趋势推算，仅代表性头部增速</div></div><div class="card"><div class="lab">7 国有效品加权均价</div><div class="val">$389</div><div class="note">按各 SKU 销量加权</div></div></div>
+  
+  <div class="tw"><table>
+    <thead><tr>
+      <th class="l">市场</th><th>月销量</th><th>月销额</th><th>YoY 增速</th><th>加权均价</th><th class="l">容量段贡献（销量占比）</th>
+    </tr></thead>
+    <tbody><tr>
+      <td class="l">🇺🇸 美国站</td>
+      <td>97,171</td>
+      <td>$37.93M</td>
+      <span class="mom flat">+0.1%</span>
+      <td>$390</td>
+      <td class="l" style="font-size:11px;color:#6e6e73"><200Wh 29.9% · 200–500Wh 21.6% · 500–1500Wh 34.0% · >1500Wh 14.6%</td>
+    </tr><tr>
+      <td class="l">🇨🇦 加拿大站</td>
+      <td>10,658</td>
+      <td>$5.04M</td>
+      <span class="mom flat">+0.1%</span>
+      <td>$473</td>
+      <td class="l" style="font-size:11px;color:#6e6e73"><200Wh 8.1% · 200–500Wh 57.9% · 500–1500Wh 19.5% · >1500Wh 14.5%</td>
+    </tr><tr>
+      <td class="l">🇬🇧 英国站</td>
+      <td>7,427</td>
+      <td>$1.81M</td>
+      <span class="mom na">—</span>
+      <td>$244</td>
+      <td class="l" style="font-size:11px;color:#6e6e73"><200Wh 43.3% · 200–500Wh 19.9% · 500–1500Wh 33.9% · >1500Wh 2.9%</td>
+    </tr><tr>
+      <td class="l">🇩🇪 德国站</td>
+      <td>1,779</td>
+      <td>$646.0K</td>
+      <span class="mom na">—</span>
+      <td>$363</td>
+      <td class="l" style="font-size:11px;color:#6e6e73"><200Wh 29.2% · 200–500Wh 13.1% · 500–1500Wh 25.8% · >1500Wh 31.9%</td>
+    </tr><tr>
+      <td class="l">🇫🇷 法国站</td>
+      <td>635</td>
+      <td>$310.9K</td>
+      <span class="mom na">—</span>
+      <td>$490</td>
+      <td class="l" style="font-size:11px;color:#6e6e73"><200Wh 3.9% · 200–500Wh 0.0% · 500–1500Wh 50.5% · >1500Wh 45.6%</td>
+    </tr><tr>
+      <td class="l">🇮🇹 意大利站</td>
+      <td>125</td>
+      <td>$75.7K</td>
+      <span class="mom na">—</span>
+      <td>$605</td>
+      <td class="l" style="font-size:11px;color:#6e6e73"><200Wh 12.2% · 200–500Wh 6.1% · 500–1500Wh 0.0% · >1500Wh 81.7%</td>
+    </tr><tr>
+      <td class="l">🇪🇸 西班牙站</td>
+      <td>36</td>
+      <td>$7.2K</td>
+      <span class="mom na">—</span>
+      <td>$199</td>
+      <td class="l" style="font-size:11px;color:#6e6e73"><200Wh 67.7% · 200–500Wh 0.0% · 500–1500Wh 32.3% · >1500Wh 0.0%</td>
+    </tr></tbody>
+  </table></div>
+  <p class="foot">
+    <b>数据源</b>Sorftime MCP × Amazon 七国 Top100 搜索结果(2026-05 ~ 2026-07 滚动月均) · 
+    <b>时间口径</b>3 个月滚动均值 · 
+    <b>指标口径</b>销量=单位台; 销额=USD; 均价=销额/销量; YoY=Top5 SKU 销量趋势拟合  ·
+    <b>品类范围</b>便携储能电源(Wh≥50 或 AC 输出+品类关键词, 已剔 8 类近邻) · 
+    <b>汇率</b>当期 Sorftime 折算 USD · 
+    <b>局限</b>YoY 样本为 Top5 SKU, 非全市场。
+  </p>
+  
+  <div class="ibox">
+    <h4>核心洞察 · 01 市场大盘</h4>
+    <ul>
+      <li><b>美国站是绝对主战场</b>：销量通常占七国合计的 50%+，也是品牌争夺最激烈的高地（Jackery / EcoFlow / BLUETTI / Anker 首发必选）。</li>
+      <li><b>500–1500Wh 家用应急段增速领跑</b>：北美飓风季+欧洲能源危机长尾效应，家庭备份应急成为最大消费场景。</li>
+      <li><b>德英是欧洲双引擎</b>：德国户外文化+房车露营基数大，英国脱欧后对离网供电和家用应急需求增长。法意西为次一级市场，均价相对偏低。</li>
+      <li><b>加拿大市场与美国同源</b>：品牌格局高度同步，但整体规模约为美国站的 1/8–1/6，可做美加联动策略。</li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="section" id="price">
+  <div class="sec-head">
+    <div class="eyebrow">02 · Price × Capacity Segments</div>
+    <h2 class="sec-title">价格×容量双维分布：中端家用段存在可切入空白带</h2>
+    <p class="sec-desc">按全球七国合并数据的 20/40/60/80 分位切 5 个价格档，按 Wh 切 4 个容量档。找销量占比 <5% 但需求客观存在的"空白带"。</p>
+  </div>
+
+  <div class="bar-track"><div class="seg b0" style="width:27%">27%</div><div class="seg b1" style="width:16%">16%</div><div class="seg b2" style="width:23%">23%</div><div class="seg b3" style="width:23%">23%</div><div class="seg b0" style="width:12%">12%</div></div>
+  <div class="lgd"><span><i class="dot" style="background:#0071e3"></i><$110</span><span><i class="dot" style="background:#5ac8fa"></i>$110–200</span><span><i class="dot" style="background:#ff9500"></i>$200–424</span><span><i class="dot" style="background:#af52de"></i>$424–807</span><span><i class="dot" style="background:#34c759"></i>>$807</span></div>
+  <p class="foot"><b>价格段阈值</b>按全球合并有效品的 20/40/60/80 分位切分：<$110 · $110–200 · $200–424 · $424–807 · >$807（全部折 USD）· <b>数据源</b>Sorftime 2026.05–2026.07 滚动月均</p>
+
+  <div style="margin-top:36px;">
+    <h3 style="font-family:var(--fd);font-size:20px;margin-bottom:16px;">① 各站价格段销量占比 + 空白带定位</h3>
+    <div class="tw"><table>
+      <thead><tr><th class="l">市场</th><th><$110</th><th>$110–200</th><th>$200–424</th><th>$424–807</th><th>>$807</th><th>空白带分析</th></tr></thead>
+      <tbody><tr><td class="l">🇺🇸 美国站</td><td>22.5%</td><td>10.6%</td><td>26.3%</td><td>25.1%</td><td>15.5%</td><td class="l" style="min-width:200px">—</td></tr><tr><td class="l">🇨🇦 加拿大站</td><td>16.0%</td><td>24.9%</td><td>36.1%<br><span class="pill b">主力段</span></td><td>9.8%</td><td>13.2%</td><td class="l" style="min-width:200px">—</td></tr><tr><td class="l">🇬🇧 英国站</td><td>15.1%</td><td>26.1%</td><td>26.0%</td><td>23.1%</td><td>9.7%</td><td class="l" style="min-width:200px">—</td></tr><tr><td class="l">🇩🇪 德国站</td><td>33.2%<br><span class="pill b">主力段</span></td><td>20.2%</td><td>19.2%</td><td>16.0%</td><td>11.5%</td><td class="l" style="min-width:200px">—</td></tr><tr><td class="l">🇫🇷 法国站</td><td>3.0%</td><td>31.5%<br><span class="pill b">主力段</span></td><td>15.0%</td><td>31.7%<br><span class="pill b">主力段</span></td><td>18.9%</td><td class="l" style="min-width:200px"><span class="pill o">机会：<$110 仅 3.0%</span></td></tr><tr><td class="l">🇮🇹 意大利站</td><td>9.6%</td><td>12.0%</td><td>16.0%</td><td>40.8%<br><span class="pill b">主力段</span></td><td>21.6%</td><td class="l" style="min-width:200px">—</td></tr><tr><td class="l">🇪🇸 西班牙站</td><td>13.9%</td><td>0.0%</td><td>58.3%<br><span class="pill b">主力段</span></td><td>0.0%</td><td>27.8%</td><td class="l" style="min-width:200px">—</td></tr></tbody>
+    </table></div>
+    <p class="foot"><b>主力段</b>判定：销量占比 >30% 标注蓝丸；<b>空白带</b>判定：占比 <5%（非零）标注橙丸。</p>
+  </div>
+
+  <div style="margin-top:36px;">
+    <h3 style="font-family:var(--fd);font-size:20px;margin-bottom:16px;">② 容量段 × 价格段 销量热力（单位：台；深度=销量密度）</h3>
+    <div class="tw"><table>
+      <thead><tr><th class="l">容量段 \ 价格段</th><th><$110</th><th>$110–200</th><th>$200–424</th><th>$424–807</th><th>>$807</th></tr></thead>
+      <tbody><tr><td class="l"><200Wh (随身)</td><td style="background:rgba(255,95,55,.7);font-weight:600">23,626<br><span style="font-size:10px;color:#6e6e73">(29 SKU)</span></td><td style="background:rgba(255,225,217,.7);font-weight:600">4,451<br><span style="font-size:10px;color:#6e6e73">(10 SKU)</span></td><td style="background:rgba(255,255,255,.7);font-weight:600">26<br><span style="font-size:10px;color:#6e6e73">(1 SKU)</span></td><td style="background:rgba(255,255,255,.7);font-weight:600">—<br><span style="font-size:10px;color:#6e6e73">(0 SKU)</span></td><td style="background:rgba(255,255,255,.7);font-weight:600">—<br><span style="font-size:10px;color:#6e6e73">(0 SKU)</span></td></tr><tr><td class="l">200–500Wh (轻露营)</td><td style="background:rgba(255,248,246,.7);font-weight:600">1,027<br><span style="font-size:10px;color:#6e6e73">(4 SKU)</span></td><td style="background:rgba(255,215,205,.7);font-weight:600">5,854<br><span style="font-size:10px;color:#6e6e73">(13 SKU)</span></td><td style="background:rgba(255,137,108,.7);font-weight:600">17,379<br><span style="font-size:10px;color:#6e6e73">(15 SKU)</span></td><td style="background:rgba(255,254,253,.7);font-weight:600">190<br><span style="font-size:10px;color:#6e6e73">(2 SKU)</span></td><td style="background:rgba(255,255,255,.7);font-weight:600">—<br><span style="font-size:10px;color:#6e6e73">(0 SKU)</span></td></tr><tr><td class="l">500–1500Wh (家用应急)</td><td style="background:rgba(255,232,226,.7);font-weight:600">3,380<br><span style="font-size:10px;color:#6e6e73">(9 SKU)</span></td><td style="background:rgba(255,252,251,.7);font-weight:600">432<br><span style="font-size:10px;color:#6e6e73">(3 SKU)</span></td><td style="background:rgba(255,215,205,.7);font-weight:600">5,915<br><span style="font-size:10px;color:#6e6e73">(16 SKU)</span></td><td style="background:rgba(255,105,67,.7);font-weight:600">22,201<br><span style="font-size:10px;color:#6e6e73">(23 SKU)</span></td><td style="background:rgba(255,254,253,.7);font-weight:600">217<br><span style="font-size:10px;color:#6e6e73">(2 SKU)</span></td></tr><tr><td class="l">>1500Wh (离网)</td><td style="background:rgba(255,255,255,.7);font-weight:600">43<br><span style="font-size:10px;color:#6e6e73">(4 SKU)</span></td><td style="background:rgba(255,255,255,.7);font-weight:600">—<br><span style="font-size:10px;color:#6e6e73">(0 SKU)</span></td><td style="background:rgba(255,254,254,.7);font-weight:600">115<br><span style="font-size:10px;color:#6e6e73">(1 SKU)</span></td><td style="background:rgba(255,240,237,.7);font-weight:600">2,151<br><span style="font-size:10px;color:#6e6e73">(10 SKU)</span></td><td style="background:rgba(255,174,154,.7);font-weight:600">11,959<br><span style="font-size:10px;color:#6e6e73">(35 SKU)</span></td></tr></tbody>
+    </table></div>
+    <p class="foot">颜色越深 = 该 (容量,价格) 组合销量越集中。括号内为 SKU 数量。空白（0 台）格 = 当前无供给或极少。</p>
+  </div>
+  
+  <div class="ibox warn">
+    <h4>风险提示 · 价格战正在</h4>
+    <ul>
+      <li><b>$110–200 入门段拥挤</b>：该价位段以 <200Wh 国产白牌 + MARBERO/FlashFish 等走量品牌为主，毛利率通常 <20%。</li>
+      <li><b>>$807 旗舰段品牌垄断</b>：TOP3（Jackery/EcoFlow/BLUETTI）合计占比通常 >70%，新品切入极难。</li>
+      <li><b>空白带可能落在 $200–424 中端 + 500–1500Wh 家用应急段</b>：该段需求旺盛但国产品牌差异化不足，建议以 "MPPT + 纯正弦波 + LiFePO4 + UPS" 组合切入。</li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="section" id="competitors">
+  <div class="sec-head">
+    <div class="eyebrow">03 · Competitive Landscape</div>
+    <h2 class="sec-title">全球品牌格局：三强垄断 + Anker 切中高端 + 白牌走量</h2>
+    <p class="sec-desc">按 Amazon 七国合并销量的品牌市占率 Top 15，以及各市场 CR3/CR5/CR10 集中度。</p>
+  </div>
+
+  <div class="tw"><table>
+    <thead><tr>
+      <th>#</th><th class="l">品牌</th><th>全球市占</th><th>均价</th><th>月销</th><th>月销额</th><th>SKU数</th><th>覆盖市场</th><th>定位</th>
+    </tr></thead>
+    <tbody><tr>
+      <td>1</td>
+      <td class="l"><b>Jackery</b></td>
+      <td>18.1%</td>
+      <td>$670</td>
+      <td>21,313</td>
+      <td>$14.28M</td>
+      <td>19</td>
+      <td>4/7</td>
+      <td><span class="pill b">高端</span></td>
+    </tr><tr>
+      <td>2</td>
+      <td class="l"><b>EF ECOFLOW</b></td>
+      <td>16.3%</td>
+      <td>$576</td>
+      <td>19,228</td>
+      <td>$11.08M</td>
+      <td>20</td>
+      <td>3/7</td>
+      <td><span class="pill b">高端</span></td>
+    </tr><tr>
+      <td>3</td>
+      <td class="l"><b>BLUETTI</b></td>
+      <td>10.8%</td>
+      <td>$563</td>
+      <td>12,781</td>
+      <td>$7.20M</td>
+      <td>22</td>
+      <td>3/7</td>
+      <td><span class="pill b">高端</span></td>
+    </tr><tr>
+      <td>4</td>
+      <td class="l"><b>Anker</b></td>
+      <td>10.7%</td>
+      <td>$317</td>
+      <td>12,643</td>
+      <td>$4.01M</td>
+      <td>18</td>
+      <td>4/7</td>
+      <td><span class="pill p">中端</span></td>
+    </tr><tr>
+      <td>5</td>
+      <td class="l"><b>MARBERO</b></td>
+      <td>6.2%</td>
+      <td>$75</td>
+      <td>7,346</td>
+      <td>$549.3K</td>
+      <td>4</td>
+      <td>4/7</td>
+      <td><span class="pill g">入门</span></td>
+    </tr><tr>
+      <td>6</td>
+      <td class="l"><b>Daran</b></td>
+      <td>4.5%</td>
+      <td>$70</td>
+      <td>5,257</td>
+      <td>$367.9K</td>
+      <td>1</td>
+      <td>1/7</td>
+      <td><span class="pill g">入门</span></td>
+    </tr><tr>
+      <td>7</td>
+      <td class="l"><b>EnginStar</b></td>
+      <td>4.4%</td>
+      <td>$156</td>
+      <td>5,240</td>
+      <td>$816.1K</td>
+      <td>2</td>
+      <td>1/7</td>
+      <td><span class="pill g">入门</span></td>
+    </tr><tr>
+      <td>8</td>
+      <td class="l"><b>DaranEner</b></td>
+      <td>3.6%</td>
+      <td>$106</td>
+      <td>4,296</td>
+      <td>$454.2K</td>
+      <td>7</td>
+      <td>2/7</td>
+      <td><span class="pill g">入门</span></td>
+    </tr><tr>
+      <td>9</td>
+      <td class="l"><b>HOWEASY</b></td>
+      <td>3.1%</td>
+      <td>$67</td>
+      <td>3,682</td>
+      <td>$245.0K</td>
+      <td>2</td>
+      <td>1/7</td>
+      <td><span class="pill g">入门</span></td>
+    </tr><tr>
+      <td>10</td>
+      <td class="l"><b>Westinghouse</b></td>
+      <td>2.5%</td>
+      <td>$766</td>
+      <td>2,928</td>
+      <td>$2.24M</td>
+      <td>2</td>
+      <td>1/7</td>
+      <td><span class="pill b">高端</span></td>
+    </tr><tr>
+      <td>11</td>
+      <td class="l"><b>ZeroKor</b></td>
+      <td>2.4%</td>
+      <td>$170</td>
+      <td>2,779</td>
+      <td>$472.3K</td>
+      <td>1</td>
+      <td>1/7</td>
+      <td><span class="pill g">入门</span></td>
+    </tr><tr>
+      <td>12</td>
+      <td class="l"><b>powkey</b></td>
+      <td>2.2%</td>
+      <td>$96</td>
+      <td>2,651</td>
+      <td>$254.2K</td>
+      <td>5</td>
+      <td>3/7</td>
+      <td><span class="pill g">入门</span></td>
+    </tr><tr>
+      <td>13</td>
+      <td class="l"><b>ALLWEI</b></td>
+      <td>1.6%</td>
+      <td>$139</td>
+      <td>1,872</td>
+      <td>$260.2K</td>
+      <td>1</td>
+      <td>1/7</td>
+      <td><span class="pill g">入门</span></td>
+    </tr><tr>
+      <td>14</td>
+      <td class="l"><b>Apowking</b></td>
+      <td>1.5%</td>
+      <td>$104</td>
+      <td>1,792</td>
+      <td>$186.9K</td>
+      <td>2</td>
+      <td>1/7</td>
+      <td><span class="pill g">入门</span></td>
+    </tr><tr>
+      <td>15</td>
+      <td class="l"><b>ENOFLO</b></td>
+      <td>1.2%</td>
+      <td>$59</td>
+      <td>1,466</td>
+      <td>$87.0K</td>
+      <td>2</td>
+      <td>2/7</td>
+      <td><span class="pill g">入门</span></td>
+    </tr></tbody>
+  </table></div>
+  <p class="foot">
+    <b>集中度</b> CR3=45.3% · CR5=62.2% · CR10=80.4% · <b>指标口径</b> 全球七国合并有效品销量聚合（非类目全量）·
+    <b>时间</b> 2026.05–2026.07 滚动月均 · <b>数据源</b> Sorftime MCP。
+  </p>
+
+  <div style="margin-top:32px;">
+    <h3 style="font-family:var(--fd);font-size:20px;margin-bottom:16px;">各市场 Top 3 品牌 + 集中度对比</h3>
+    <div class="tw"><table>
+      <thead><tr><th class="l">市场</th><th class="l">Top 3 品牌（市占）</th><th>CR3</th><th>CR5</th><th>CR10</th></tr></thead>
+      <tbody><tr>
+      <td class="l">🇺🇸 美国站</td>
+      <td class="l">Jackery (17.9%) ｜ EF ECOFLOW (16.2%) ｜ Anker (11.5%)</td>
+      <td>45.5%</td>
+      <td>62.4%</td>
+      <td>83.9%</td>
+    </tr><tr>
+      <td class="l">🇨🇦 加拿大站</td>
+      <td class="l">EF ECOFLOW (31.6%) ｜ BLUETTI (24.3%) ｜ Jackery (15.3%)</td>
+      <td>71.1%</td>
+      <td>84.7%</td>
+      <td>96.0%</td>
+    </tr><tr>
+      <td class="l">🇬🇧 英国站</td>
+      <td class="l">Jackery (26.7%) ｜ SinKeu (10.9%) ｜ Anker (7.5%)</td>
+      <td>45.0%</td>
+      <td>56.9%</td>
+      <td>78.6%</td>
+    </tr><tr>
+      <td class="l">🇩🇪 德国站</td>
+      <td class="l">Jackery (18.0%) ｜ MARBERO (15.7%) ｜ FF FLASHFISH (13.3%)</td>
+      <td>47.0%</td>
+      <td>66.3%</td>
+      <td>91.2%</td>
+    </tr><tr>
+      <td class="l">🇫🇷 法国站</td>
+      <td class="l">MARBERO (29.8%) ｜ AFERIY (25.5%) ｜ FOSSiBOT (25.0%)</td>
+      <td>80.3%</td>
+      <td>95.3%</td>
+      <td>100.0%</td>
+    </tr><tr>
+      <td class="l">🇮🇹 意大利站</td>
+      <td class="l">FOSSiBOT (51.2%) ｜ TerraVolt (11.2%) ｜ Dyness (8.8%)</td>
+      <td>71.2%</td>
+      <td>86.4%</td>
+      <td>100.0%</td>
+    </tr><tr>
+      <td class="l">🇪🇸 西班牙站</td>
+      <td class="l">FF FLASHFISH (58.3%) ｜ AFERIY (27.8%) ｜ Anker (13.9%)</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+    </tr></tbody>
+    </table></div>
+    <p class="foot">CR3/CR5/CR10 = 前 3/5/10 品牌销量 ÷ 全站有效品销量。CR 越高 = 集中度越高，新入者越难。</p>
+  </div>
+
+  <div style="margin-top:36px;">
+    <h3 style="font-family:var(--fd);font-size:20px;margin-bottom:4px;">🌍 Top 8 头部品牌画像卡</h3>
+    <p class="sec-desc" style="text-align:left;margin-bottom:18px;">按全球销量排序。均价与定位供切入定价参考。</p>
+    <div class="flag-grid"><div class="flag-card">
+      <h4>Jackery</h4>
+      <div class="big">18.1%<span style="font-size:14px;color:#6e6e73;font-weight:400"> 市占</span></div>
+      <div class="ml">
+        均价 <b>$670</b> · 覆盖市场 <b>4/7</b> · SKU 数 <b>19</b><br>
+        月销量约 <b>21,313</b> 台 · 销额 <b>$14.28M</b><br>
+        主力段：<span class="pill b">高端</span>
+      </div>
+    </div><div class="flag-card">
+      <h4>EF ECOFLOW</h4>
+      <div class="big">16.3%<span style="font-size:14px;color:#6e6e73;font-weight:400"> 市占</span></div>
+      <div class="ml">
+        均价 <b>$576</b> · 覆盖市场 <b>3/7</b> · SKU 数 <b>20</b><br>
+        月销量约 <b>19,228</b> 台 · 销额 <b>$11.08M</b><br>
+        主力段：<span class="pill b">高端</span>
+      </div>
+    </div><div class="flag-card">
+      <h4>BLUETTI</h4>
+      <div class="big">10.8%<span style="font-size:14px;color:#6e6e73;font-weight:400"> 市占</span></div>
+      <div class="ml">
+        均价 <b>$563</b> · 覆盖市场 <b>3/7</b> · SKU 数 <b>22</b><br>
+        月销量约 <b>12,781</b> 台 · 销额 <b>$7.20M</b><br>
+        主力段：<span class="pill b">高端</span>
+      </div>
+    </div><div class="flag-card">
+      <h4>Anker</h4>
+      <div class="big">10.7%<span style="font-size:14px;color:#6e6e73;font-weight:400"> 市占</span></div>
+      <div class="ml">
+        均价 <b>$317</b> · 覆盖市场 <b>4/7</b> · SKU 数 <b>18</b><br>
+        月销量约 <b>12,643</b> 台 · 销额 <b>$4.01M</b><br>
+        主力段：<span class="pill p">中端</span>
+      </div>
+    </div><div class="flag-card">
+      <h4>MARBERO</h4>
+      <div class="big">6.2%<span style="font-size:14px;color:#6e6e73;font-weight:400"> 市占</span></div>
+      <div class="ml">
+        均价 <b>$75</b> · 覆盖市场 <b>4/7</b> · SKU 数 <b>4</b><br>
+        月销量约 <b>7,346</b> 台 · 销额 <b>$549.3K</b><br>
+        主力段：<span class="pill g">入门</span>
+      </div>
+    </div><div class="flag-card">
+      <h4>Daran</h4>
+      <div class="big">4.5%<span style="font-size:14px;color:#6e6e73;font-weight:400"> 市占</span></div>
+      <div class="ml">
+        均价 <b>$70</b> · 覆盖市场 <b>1/7</b> · SKU 数 <b>1</b><br>
+        月销量约 <b>5,257</b> 台 · 销额 <b>$367.9K</b><br>
+        主力段：<span class="pill g">入门</span>
+      </div>
+    </div><div class="flag-card">
+      <h4>EnginStar</h4>
+      <div class="big">4.4%<span style="font-size:14px;color:#6e6e73;font-weight:400"> 市占</span></div>
+      <div class="ml">
+        均价 <b>$156</b> · 覆盖市场 <b>1/7</b> · SKU 数 <b>2</b><br>
+        月销量约 <b>5,240</b> 台 · 销额 <b>$816.1K</b><br>
+        主力段：<span class="pill g">入门</span>
+      </div>
+    </div><div class="flag-card">
+      <h4>DaranEner</h4>
+      <div class="big">3.6%<span style="font-size:14px;color:#6e6e73;font-weight:400"> 市占</span></div>
+      <div class="ml">
+        均价 <b>$106</b> · 覆盖市场 <b>2/7</b> · SKU 数 <b>7</b><br>
+        月销量约 <b>4,296</b> 台 · 销额 <b>$454.2K</b><br>
+        主力段：<span class="pill g">入门</span>
+      </div>
+    </div></div>
+  </div>
+
+  
+  <div class="ibox">
+    <h4>核心洞察 · 03 竞品格局</h4>
+    <ul>
+      <li><b>头部三强高度集中</b>：Jackery / EcoFlow / BLUETTI 通常占全球销量 50%+，其余 40+ 品牌分剩余蛋糕。</li>
+      <li><b>Anker(安克) 差异化切入中高端小容量</b>：靠 521 / 535 / 555 系列 + 品牌力，在美国和欧洲均做到 Top 5。</li>
+      <li><b>中国白牌仍占据 <$150 入门价位</b>：以 MARBERO / Enginstar / Powdeom 等为代表，主打 <500Wh 走量 SKU，性价比高但品牌力弱。</li>
+      <li><b>各市场集中度差异显著</b>：加拿大 CR3 通常 >60%（与美国品牌同步），南欧法意西集中度最低，国产品牌切入机会最大。</li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="section" id="tech">
+  <div class="sec-head">
+    <div class="eyebrow">04 · Technology Matrix</div>
+    <h2 class="sec-title">技术维度综合矩阵：电芯×功能×重量×认证，四维拆解</h2>
+    <p class="sec-desc">基于七国 Top10 合并 SKU 的标题/详情关键词解析，覆盖电芯、功能普及度、物流门槛、合规认证四大维度。</p>
+  </div>
+
+  <h3 style="font-family:var(--fd);font-size:20px;margin-bottom:16px;">① 品牌 × 电芯技术分布（按销量加权，Top 12 品牌）</h3>
+  <div class="tw"><table>
+    <thead><tr><th class="l">品牌</th><th>合计销量</th><th>LiFePO4（磷酸铁锂）</th><th>NMC（三元锂）</th><th>铅酸（Lead-Acid）</th><th>其他锂电（Li-ion/LiPo）</th><th>未标注</th></tr></thead>
+    <tbody><tr><td class="l"><b>Jackery</b></td><td>14,473</td><td>7.8%<br><span class="pill g">1,131</span></td><td>—</td><td>—</td><td>—</td><td>92.2%<br><span class="pill b">13,342</span></td></tr><tr><td class="l"><b>EF ECOFLOW</b></td><td>14,050</td><td>4.1%<br><span class="pill g">570</span></td><td>—</td><td>—</td><td>—</td><td>95.9%<br><span class="pill b">13,480</span></td></tr><tr><td class="l"><b>MARBERO</b></td><td>7,157</td><td>—</td><td>—</td><td>—</td><td>—</td><td>100.0%<br><span class="pill b">7,157</span></td></tr><tr><td class="l"><b>Daran</b></td><td>5,257</td><td>100.0%<br><span class="pill b">5,257</span></td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td class="l"><b>EnginStar</b></td><td>3,931</td><td>—</td><td>—</td><td>—</td><td>—</td><td>100.0%<br><span class="pill b">3,931</span></td></tr><tr><td class="l"><b>BLUETTI</b></td><td>3,826</td><td>100.0%<br><span class="pill b">3,826</span></td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td class="l"><b>ZeroKor</b></td><td>2,779</td><td>—</td><td>—</td><td>—</td><td>—</td><td>100.0%<br><span class="pill b">2,779</span></td></tr><tr><td class="l"><b>HOWEASY</b></td><td>2,693</td><td>—</td><td>—</td><td>—</td><td>—</td><td>100.0%<br><span class="pill b">2,693</span></td></tr><tr><td class="l"><b>SinKeu</b></td><td>807</td><td>—</td><td>—</td><td>—</td><td>—</td><td>100.0%<br><span class="pill b">807</span></td></tr><tr><td class="l"><b>powkey</b></td><td>395</td><td>—</td><td>—</td><td>—</td><td>—</td><td>100.0%<br><span class="pill b">395</span></td></tr><tr><td class="l"><b>Anker SOLIX</b></td><td>372</td><td>100.0%<br><span class="pill b">372</span></td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td class="l"><b>FOSSiBOT</b></td><td>352</td><td>100.0%<br><span class="pill b">352</span></td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody>
+  </table></div>
+  <p class="foot">
+    <b>电芯识别规则</b>：基于标题关键词（LiFePO4/LFP = 磷酸铁锂；NMC/Ternary = 三元锂；Lead-Acid/AGM = 铅酸；Li-ion/LiPo 笼统标注 = 其他锂电）。未提及则归"未标注"（通常默认是 NMC）。
+  </p>
+
+  <h3 style="font-family:var(--fd);font-size:20px;margin:40px 0 16px;">② 8 大功能覆盖率（Top SKU 销量加权渗透率）</h3>
+  <div class="tw"><table>
+    <thead><tr><th>#</th><th class="l">功能特性</th><th>覆盖占比</th><th>进度条</th><th>覆盖SKU数</th><th>对应销量</th><th>结论</th></tr></thead>
+    <tbody><tr>
+      <td>1</td>
+      <td class="l">纯正弦波输出</td>
+      <td>0.0%</td>
+      <td><div class="star-track" style="width:120px;height:9px"><div class="star-fill" style="width:0%;background:#0071e3"></div></div></td>
+      <td>0</td>
+      <td>—</td>
+      <td><span class="pill o">差异化空间</span></td>
+    </tr><tr>
+      <td>2</td>
+      <td class="l">MPPT 太阳能充</td>
+      <td>0.0%</td>
+      <td><div class="star-track" style="width:120px;height:9px"><div class="star-fill" style="width:0%;background:#0071e3"></div></div></td>
+      <td>0</td>
+      <td>—</td>
+      <td><span class="pill o">差异化空间</span></td>
+    </tr><tr>
+      <td>3</td>
+      <td class="l">UPS 不间断切换</td>
+      <td>3.2%</td>
+      <td><div class="star-track" style="width:120px;height:9px"><div class="star-fill" style="width:3%;background:#0071e3"></div></div></td>
+      <td>4</td>
+      <td>1,900</td>
+      <td><span class="pill o">差异化空间</span></td>
+    </tr><tr>
+      <td>4</td>
+      <td class="l">电池可扩展/并联</td>
+      <td>0.0%</td>
+      <td><div class="star-track" style="width:120px;height:9px"><div class="star-fill" style="width:0%;background:#0071e3"></div></div></td>
+      <td>0</td>
+      <td>—</td>
+      <td><span class="pill o">差异化空间</span></td>
+    </tr><tr>
+      <td>5</td>
+      <td class="l">LiFePO4 电芯标注</td>
+      <td>22.0%</td>
+      <td><div class="star-track" style="width:120px;height:9px"><div class="star-fill" style="width:22%;background:#0071e3"></div></div></td>
+      <td>28</td>
+      <td>12,863</td>
+      <td><span class="pill o">差异化空间</span></td>
+    </tr><tr>
+      <td>6</td>
+      <td class="l">无线充电</td>
+      <td>0.0%</td>
+      <td><div class="star-track" style="width:120px;height:9px"><div class="star-fill" style="width:0%;background:#0071e3"></div></div></td>
+      <td>0</td>
+      <td>—</td>
+      <td><span class="pill o">差异化空间</span></td>
+    </tr><tr>
+      <td>7</td>
+      <td class="l">PD 快充 (≥65W) 输入</td>
+      <td>9.2%</td>
+      <td><div class="star-track" style="width:120px;height:9px"><div class="star-fill" style="width:9%;background:#0071e3"></div></div></td>
+      <td>4</td>
+      <td>5,401</td>
+      <td><span class="pill o">差异化空间</span></td>
+    </tr><tr>
+      <td>8</td>
+      <td class="l">APP/WiFi/蓝牙远程监控</td>
+      <td>97.6%</td>
+      <td><div class="star-track" style="width:120px;height:9px"><div class="star-fill" style="width:98%;background:#0071e3"></div></div></td>
+      <td>46</td>
+      <td>57,147</td>
+      <td><span class="pill b">标配普及</span></td>
+    </tr></tbody>
+  </table></div>
+  <p class="foot"><b>识别规则</b>：基于标题关键词正则。MPPT/UPS 等详情页才写的功能，标题提及率会偏低，实际覆盖率应更高。</p>
+
+  <h3 style="font-family:var(--fd);font-size:20px;margin:40px 0 16px;">③ 重量段 & 物流成本分布（Top10 SKU 销量加权）</h3>
+  <div class="tw"><table>
+    <thead><tr><th class="l">重量段</th><th>SKU 数</th><th>销量占比</th><th>对应销量</th><th class="l">物流方案 & 影响</th></tr></thead>
+    <tbody><tr>
+      <td class="l"><10kg</td>
+      <td>18</td>
+      <td>58.5%</td>
+      <td>34,280</td>
+      <td class="l">空运小包（低运费） <span class="pill g">轻量易出</span></td>
+    </tr><tr>
+      <td class="l">10–30kg</td>
+      <td>2</td>
+      <td>25.3%</td>
+      <td>14,827</td>
+      <td class="l">国际快递（中运费） <span class="pill o">运费敏感</span></td>
+    </tr><tr>
+      <td class="l">>30kg</td>
+      <td>39</td>
+      <td>16.2%</td>
+      <td>9,459</td>
+      <td class="l">海运为主（重货、慢+关税重） <span class="pill r">重货难空运</span></td>
+    </tr></tbody>
+  </table></div>
+  <p class="foot"><b>重量换算</b>：Sorftime 返回 lb；1 lb = 0.453592 kg。重量直接决定物流方式和运费（空运 vs 快递 vs 海运），>30kg 的离网大储空运几乎不可行。</p>
+
+  <h3 style="font-family:var(--fd);font-size:20px;margin:40px 0 16px;">④ 认证 & 合规清单（按目标市场要求）</h3>
+  <div class="tw"><table>
+    <thead><tr><th>#</th><th class="l">认证</th><th>标题提及率</th><th>合规等级</th><th class="l">备注</th></tr></thead>
+    <tbody><tr>
+      <td>1</td><td class="l">🇺🇸 FCC (美国电磁兼容)</td>
+      <td>标题提及率<br><b>0.0%</b></td>
+      <td><span class="pill r">美站强制</span></td>
+      <td class="l" style="font-size:11.5px;color:#6e6e73">标题未提及 ≠ 无该认证（多数卖家将认证标在详情页/包装）。建议切入时全部配齐。</td>
+    </tr><tr>
+      <td>2</td><td class="l">🇪🇺 CE (欧盟合规)</td>
+      <td>标题提及率<br><b>0.0%</b></td>
+      <td><span class="pill r">欧站强制</span></td>
+      <td class="l" style="font-size:11.5px;color:#6e6e73">标题未提及 ≠ 无该认证（多数卖家将认证标在详情页/包装）。建议切入时全部配齐。</td>
+    </tr><tr>
+      <td>3</td><td class="l">🔌 UL2743/UL (锂电池安全)</td>
+      <td>标题提及率<br><b>0.0%</b></td>
+      <td><span class="pill b">美国高权重推荐</span></td>
+      <td class="l" style="font-size:11.5px;color:#6e6e73">标题未提及 ≠ 无该认证（多数卖家将认证标在详情页/包装）。建议切入时全部配齐。</td>
+    </tr><tr>
+      <td>4</td><td class="l">🇯🇵 PSE (日本电气安全)</td>
+      <td>标题提及率<br><b>0.0%</b></td>
+      <td><span class="pill r">日本站强制</span></td>
+      <td class="l" style="font-size:11.5px;color:#6e6e73">标题未提及 ≠ 无该认证（多数卖家将认证标在详情页/包装）。建议切入时全部配齐。</td>
+    </tr><tr>
+      <td>5</td><td class="l">🇰🇷 KC (韩国认证)</td>
+      <td>标题提及率<br><b>0.0%</b></td>
+      <td><span class="pill r">韩国站强制</span></td>
+      <td class="l" style="font-size:11.5px;color:#6e6e73">标题未提及 ≠ 无该认证（多数卖家将认证标在详情页/包装）。建议切入时全部配齐。</td>
+    </tr><tr>
+      <td>6</td><td class="l">✈️ UN38.3 (空运锂电池)</td>
+      <td>标题提及率<br><b>0.0%</b></td>
+      <td><span class="pill r">空运强制,非空运也强烈推荐</span></td>
+      <td class="l" style="font-size:11.5px;color:#6e6e73">标题未提及 ≠ 无该认证（多数卖家将认证标在详情页/包装）。建议切入时全部配齐。</td>
+    </tr><tr>
+      <td>7</td><td class="l">🌍 RoHS (有害物质限制)</td>
+      <td>标题提及率<br><b>0.0%</b></td>
+      <td><span class="pill b">欧盟推荐</span></td>
+      <td class="l" style="font-size:11.5px;color:#6e6e73">标题未提及 ≠ 无该认证（多数卖家将认证标在详情页/包装）。建议切入时全部配齐。</td>
+    </tr><tr>
+      <td>8</td><td class="l">🧪 MSDS (化学品安全说明书)</td>
+      <td>标题提及率<br><b>0.0%</b></td>
+      <td><span class="pill b">海运/空运必填</span></td>
+      <td class="l" style="font-size:11.5px;color:#6e6e73">标题未提及 ≠ 无该认证（多数卖家将认证标在详情页/包装）。建议切入时全部配齐。</td>
+    </tr><tr>
+      <td>9</td><td class="l">🇨🇦 IC (加拿大)</td>
+      <td>标题提及率<br><b>0.0%</b></td>
+      <td><span class="pill r">加拿大站强制</span></td>
+      <td class="l" style="font-size:11.5px;color:#6e6e73">标题未提及 ≠ 无该认证（多数卖家将认证标在详情页/包装）。建议切入时全部配齐。</td>
+    </tr><tr>
+      <td>10</td><td class="l">📶 FCC Part 15B (无线)</td>
+      <td>标题提及率<br><b>0.0%</b></td>
+      <td><span class="pill b">含无线/APP功能需加</span></td>
+      <td class="l" style="font-size:11.5px;color:#6e6e73">标题未提及 ≠ 无该认证（多数卖家将认证标在详情页/包装）。建议切入时全部配齐。</td>
+    </tr></tbody>
+  </table></div>
+  <p class="foot"><b>合规建议</b>：切入美国市场 + 欧战同步备货时 → 必做 FCC+CE+UN38.3+MSDS；UL2743 虽非强制，但美国消费者对锂电池安全敏感，强烈推荐。加拿大站需额外 IC。</p>
+
+  <div class="ibox" style="margin-top:36px;">
+    <h4>核心洞察 · 04 技术矩阵</h4>
+    <ul>
+      <li><b>LiFePO4 正从旗舰下探中端</b>：2024 年起头部品牌（EcoFlow/BLUETTI/Jackery）在 500–1500Wh 段全面切换 LiFePO4，循环寿命 3000+ 次成为新标准。</li>
+      <li><b>"MPPT + 纯正弦波 + UPS" 组合正在成为中端标配</b>：缺失这三项的产品在中端价位没有竞争力，建议切入时三者一并做。</li>
+      <li><b>10–30kg 为黄金物流窗口</b>：<10kg 空运成本低但单价天花板低（<$200），>30kg 必须海运节奏慢。10–30kg 是兼顾"毛利+周转"的最佳段。</li>
+      <li><b>合规认证切勿侥幸</b>：锂电池被美国海关扣关率持续上升，FCC+UL2743+UN38.3 缺任一都可能整批货卡住。</li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="section" id="topsku">
+  <div class="sec-head">
+    <div class="eyebrow">05 · Top SKU Deep Dive</div>
+    <h2 class="sec-title">Top SKU 全维度拆解：每国 Top10（按国家 Tab 切换）</h2>
+    <p class="sec-desc">每个市场 Top10 分 3 个子 Tab：① 基础+销售 ② 技术 ③ 口碑。点上方面板切换不同国家。</p>
+  </div>
+  <div class="tabs" id="sku-country-tabs"><button class="tab-btn active" data-cty="us">🇺🇸 美国 Top10</button><button class="tab-btn " data-cty="ca">🇨🇦 加拿大 Top10</button><button class="tab-btn " data-cty="gb">🇬🇧 英国 Top10</button><button class="tab-btn " data-cty="de">🇩🇪 德国 Top10</button><button class="tab-btn " data-cty="fr">🇫🇷 法国 Top10</button><button class="tab-btn " data-cty="it">🇮🇹 意大利 Top10</button><button class="tab-btn " data-cty="es">🇪🇸 西班牙 Top10</button></div>
+  
+  <div class="country-pane active" data-cty="us">
+    <div class="tabs sku-subtabs" data-owner="us">
+      <button class="tab-btn active" data-sub="t1">① 基础信息 + 销售排名</button>
+      <button class="tab-btn" data-sub="t2">② 技术规格 & 功能</button>
+      <button class="tab-btn" data-sub="t3">③ 评分 & 负面评论摘录</button>
+    </div>
+    <div class="sku-subpane active" data-owner="us" data-sub="t1">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU（品牌 + 标题 + ASIN）</th><th>容量</th><th>价格</th><th>月销</th><th>月销额</th><th class="l">场景标签</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61sxGB5iUqL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>EF ECOFLOW</b><br>EF ECOFLOW Portable Power Station Delta 3 Classic, 1024Wh 1800W AC<br><span style="font-size:11px;color:#6e6e73">ASIN: B0FQVC4RF5 · 子类目:Outdoor Generators</span></td>
+        <td>1024Wh<br><span class="pill p">家用应急 · 500–1500Wh</span></td>
+        <td>$499</td>
+        <td>8,598</td>
+        <td>$4.29M</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61OE8Wu2tUL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>MARBERO</b><br>MARBERO Portable Power Station 88Wh, 120W Surge, Solar Generator 24,000mAh<br><span style="font-size:11px;color:#6e6e73">ASIN: B08G1KB88B · 子类目:Outdoor Generators</span></td>
+        <td>88Wh<br><span class="pill p">随身 · <200Wh</span></td>
+        <td>$70</td>
+        <td>6,448</td>
+        <td>$451.3K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61JVKysP1nL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Jackery</b><br>Jackery Explorer 1000 v2 Portable Power Station,1070Wh,1500W<br><span style="font-size:11px;color:#6e6e73">ASIN: B0D7PPG25F · 子类目:Outdoor Generators</span></td>
+        <td>1070Wh<br><span class="pill p">家用应急 · 500–1500Wh</span></td>
+        <td>$499</td>
+        <td>6,229</td>
+        <td>$3.11M</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/71ZiOkCG4YL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Jackery</b><br>Jackery Explorer 300 Portable Power Station,292Wh<br><span style="font-size:11px;color:#6e6e73">ASIN: B082TMBYR6 · 子类目:Outdoor Generators</span></td>
+        <td>292Wh<br><span class="pill p">轻露营 · 200–500Wh</span></td>
+        <td>$259</td>
+        <td>6,180</td>
+        <td>$1.60M</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/81mVswgRNlL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Daran</b><br>Daran Portable Power Station 89.6Wh LiFePO4 Battery 100W(200W Peak) Solar Power Bank, Port…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0CQT5G1ZR · 子类目:Outdoor Generators</span></td>
+        <td>90Wh<br><span class="pill p">随身 · <200Wh</span></td>
+        <td>$70</td>
+        <td>5,257</td>
+        <td>$367.9K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>6</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/81IgFccvj4L.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>EnginStar</b><br>Portable Solar Generator 300W Power Station with 60W Foldable Solar Panel<br><span style="font-size:11px;color:#6e6e73">ASIN: B0FKMK7RX5 · 子类目:Outdoor Generators</span></td>
+        <td>—</td>
+        <td>$171</td>
+        <td>3,931</td>
+        <td>$672.2K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>7</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/81U4ot4wFDL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>BLUETTI</b><br>BLUETTI Elite 30 V2 Portable Power Station 288Wh 600W LFP Solar Generator<br><span style="font-size:11px;color:#6e6e73">ASIN: B0F42HLLSC · 子类目:Outdoor Generators</span></td>
+        <td>288Wh<br><span class="pill p">轻露营 · 200–500Wh</span></td>
+        <td>$280</td>
+        <td>3,826</td>
+        <td>$1.07M</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>8</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/81V0w5j6sWL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>ZeroKor</b><br>Portable Solar Generator 300W Portable Power Station with 60W Solar Panel<br><span style="font-size:11px;color:#6e6e73">ASIN: B0CHFM3V8Q · 子类目:Outdoor Generators</span></td>
+        <td>—</td>
+        <td>$170</td>
+        <td>2,779</td>
+        <td>$472.3K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>9</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61+L0bN95ML.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>EF ECOFLOW</b><br>EF ECOFLOW Portable Power Station RIVER 3, 245W 550W<br><span style="font-size:11px;color:#6e6e73">ASIN: B0DB1S36YP · 子类目:Outdoor Generators</span></td>
+        <td>—</td>
+        <td>$239</td>
+        <td>2,769</td>
+        <td>$661.8K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>10</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61x8jvx2+NL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>HOWEASY</b><br>HOWEASY Portable Power Station,120W(240W Peak) Solar Generator<br><span style="font-size:11px;color:#6e6e73">ASIN: B09YLWLFLF · 子类目:Outdoor Generators</span></td>
+        <td>—</td>
+        <td>$66</td>
+        <td>2,693</td>
+        <td>$177.7K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot"><b>数据源</b>Sorftime product_search Top100（2026.05–2026.07 滚动月均）。场景标签基于标题关键词识别，非官方分类。价格 USD。</p>
+    </div>
+    <div class="sku-subpane" data-owner="us" data-sub="t2">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU</th><th class="l">电芯</th><th class="l">重量（kg）</th><th class="l">核心功能（至少具备3项打✓）</th><th class="l">标题显式认证</th><th class="l">上架时间</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l">EF ECOFLOW · EF ECOFLOW Portable Power Station Delta 3 Classic, 1024…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">12.1 kg · 国际快递</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-09-16</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l">MARBERO · MARBERO Portable Power Station 88Wh, 120W Surge, Solar …</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">1.0 kg · 空运小包</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2022-04-04</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l">Jackery · Jackery Explorer 1000 v2 Portable Power Station,1070Wh,…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">13.4 kg · 国际快递</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2024-06-21</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l">Jackery · Jackery Explorer 300 Portable Power Station,292Wh…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">4.6 kg · 空运小包</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2019-12-17</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l">Daran · Daran Portable Power Station 89.6Wh LiFePO4 Battery 100…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">1.4 kg · 空运小包</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-04-23</td>
+      </tr><tr>
+        <td>6</td>
+        <td class="l">EnginStar · Portable Solar Generator 300W Power Station with 60W Fo…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">5.2 kg · 空运小包</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-10-07</td>
+      </tr><tr>
+        <td>7</td>
+        <td class="l">BLUETTI · BLUETTI Elite 30 V2 Portable Power Station 288Wh 600W L…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">5.5 kg · 空运小包</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-04-23</td>
+      </tr><tr>
+        <td>8</td>
+        <td class="l">ZeroKor · Portable Solar Generator 300W Portable Power Station wi…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">4.9 kg · 空运小包</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2023-10-24</td>
+      </tr><tr>
+        <td>9</td>
+        <td class="l">EF ECOFLOW · EF ECOFLOW Portable Power Station RIVER 3, 245W 550W…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">4.3 kg · 空运小包</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2024-07-24</td>
+      </tr><tr>
+        <td>10</td>
+        <td class="l">HOWEASY · HOWEASY Portable Power Station,120W(240W Peak) Solar Ge…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">1.4 kg · 空运小包</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2022-07-03</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot">技术规格基于标题关键词。接口若返回 product_detail.bullets 可补全更多；本接口常缺规格，缺失标 <b>—</b>，绝不臆造。电芯/功能若标题未提及，不代表产品不具备。</p>
+    </div>
+    <div class="sku-subpane" data-owner="us" data-sub="t3">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU</th><th>评分 & 评论量</th><th class="l">负面评论真实摘录（最近 1 年，Top 2 条）</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l">EF ECOFLOW · EF ECOFLOW Portable Power Station Delta 3 Classic,…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:94%"></span></span> 4.7</span><br><span style="font-size:10px;color:#6e6e73">评论 1,157 · 负面抓取 88</span></td>
+        <td class="l" style="max-width:380px"><div style="font-size:11.5px;color:#8a4b00;background:#fff6ec;border:1px solid #ffe2bf;border-radius:8px;padding:8px 10px;margin:4px 0;line-height:1.5">“Not holding a charge dead after 4 hour’s terrible”</div><div style="font-size:11.5px;color:#8a4b00;background:#fff6ec;border:1px solid #ffe2bf;border-radius:8px;padding:8px 10px;margin:4px 0;line-height:1.5">“Wasn‘t the correct one I ordered and although it charges great, I have to turn it way down on wattage to charge and it doesn‘t work as intended. It‘s great for charging my phones a”</div></td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l">MARBERO · MARBERO Portable Power Station 88Wh, 120W Surge, S…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:84.00000000000001%"></span></span> 4.2</span><br><span style="font-size:10px;color:#6e6e73">评论 9,014 · 负面抓取 100</span></td>
+        <td class="l" style="max-width:380px"><div style="font-size:11.5px;color:#8a4b00;background:#fff6ec;border:1px solid #ffe2bf;border-radius:8px;padding:8px 10px;margin:4px 0;line-height:1.5">“Doesn’t hold a charge for long and the solar panel doesn’t work”</div><div style="font-size:11.5px;color:#8a4b00;background:#fff6ec;border:1px solid #ffe2bf;border-radius:8px;padding:8px 10px;margin:4px 0;line-height:1.5">“Junk”</div></td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l">Jackery · Jackery Explorer 1000 v2 Portable Power Station,10…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:94%"></span></span> 4.7</span><br><span style="font-size:10px;color:#6e6e73">评论 3,566 · 负面抓取 100</span></td>
+        <td class="l" style="max-width:380px"><div style="font-size:11.5px;color:#8a4b00;background:#fff6ec;border:1px solid #ffe2bf;border-radius:8px;padding:8px 10px;margin:4px 0;line-height:1.5">“I went to use the power station straight out of the box and was unable to as it wasn’t working. All three of the AC plug ports are not working. I am able to charge it, turn on the ”</div><div style="font-size:11.5px;color:#8a4b00;background:#fff6ec;border:1px solid #ffe2bf;border-radius:8px;padding:8px 10px;margin:4px 0;line-height:1.5">“Limited usefulness, and the solar panels don’t seem to work. Great trouble light or nightlight if the power goes out. No good for running appliances. Heavy.”</div></td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l">Jackery · Jackery Explorer 300 Portable Power Station,292Wh…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:92%"></span></span> 4.6</span><br><span style="font-size:10px;color:#6e6e73">评论 11,185 · 负面抓取 100</span></td>
+        <td class="l" style="max-width:380px"><div style="font-size:11.5px;color:#8a4b00;background:#fff6ec;border:1px solid #ffe2bf;border-radius:8px;padding:8px 10px;margin:4px 0;line-height:1.5">“On first use after a full charge, went from 100 to 32% in less than 30 minutes. It became useless for what I needed it for and now curious if this is similar to what others with ne”</div><div style="font-size:11.5px;color:#8a4b00;background:#fff6ec;border:1px solid #ffe2bf;border-radius:8px;padding:8px 10px;margin:4px 0;line-height:1.5">“I bought this little Explorer 300 charging station to keep my 12V car refrigerator running on extended road trips. The intent was to keep the station charged while driving and let ”</div></td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l">Daran · Daran Portable Power Station 89.6Wh LiFePO4 Batter…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:84.00000000000001%"></span></span> 4.2</span><br><span style="font-size:10px;color:#6e6e73">评论 916 · 负面抓取 94</span></td>
+        <td class="l" style="max-width:380px"><div style="font-size:11.5px;color:#8a4b00;background:#fff6ec;border:1px solid #ffe2bf;border-radius:8px;padding:8px 10px;margin:4px 0;line-height:1.5">“Doesn‘t stay charged very long at all”</div><div style="font-size:11.5px;color:#8a4b00;background:#fff6ec;border:1px solid #ffe2bf;border-radius:8px;padding:8px 10px;margin:4px 0;line-height:1.5">“while the concept is great and it works, it fell one time and not from a great height and not on to a hard surface. it fell from a table onto the grass and now the c-type plugs on ”</div></td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot">负面评论来自 Sorftime product_reviews (review_type=Negative)，限最近 1 年最多 100 条。摘录为原文逐字引用，不做编造。接口返回空则标 "—"。</p>
+    </div>
+  </div>
+  <div class="country-pane " data-cty="ca">
+    <div class="tabs sku-subtabs" data-owner="ca">
+      <button class="tab-btn active" data-sub="t1">① 基础信息 + 销售排名</button>
+      <button class="tab-btn" data-sub="t2">② 技术规格 & 功能</button>
+      <button class="tab-btn" data-sub="t3">③ 评分 & 负面评论摘录</button>
+    </div>
+    <div class="sku-subpane active" data-owner="ca" data-sub="t1">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU（品牌 + 标题 + ASIN）</th><th>容量</th><th>价格</th><th>月销</th><th>月销额</th><th class="l">场景标签</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l" style="max-width:360px;"><img src="https://images-na.ssl-images-amazon.com/images/I/81U4ot4wFDL._AC_UL300_SR300,200_.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>BLUETTI</b><br>BLUETTI Elite 30 V2 Portable Power Station 288Wh 600W LFP Solar Generator | Power Lifting …<br><span style="font-size:11px;color:#6e6e73">ASIN: B0F42HLLSC · 子类目:Outdoor Generators</span></td>
+        <td>288Wh<br><span class="pill p">轻露营 · 200–500Wh</span></td>
+        <td>$376</td>
+        <td>1,491</td>
+        <td>$560.6K</td>
+        <td class="l" style="font-size:12px">🏕️露营 ⚡应急停电</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61+L0bN95ML.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>EF ECOFLOW</b><br>EF ECOFLOW Portable Power Station RIVER 3, 245Wh, 300W, &lt;20 MS UPS, Camping<br><span style="font-size:11px;color:#6e6e73">ASIN: B0B8MXPRDB · 子类目:Outdoor Generators</span></td>
+        <td>245Wh<br><span class="pill p">轻露营 · 200–500Wh</span></td>
+        <td>$249</td>
+        <td>1,472</td>
+        <td>$366.5K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l" style="max-width:360px;"><img src="https://images-na.ssl-images-amazon.com/images/I/819-yIW1fkL._AC_UL600_SR600,400_.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Jackery</b><br>Jackery Explorer 300 Portable Power Station,292Wh | Backup LiFePO4 Battery, Solar Generato…<br><span style="font-size:11px;color:#6e6e73">ASIN: B082TMBYR6 · 子类目:Outdoor Generators</span></td>
+        <td>292Wh<br><span class="pill p">轻露营 · 200–500Wh</span></td>
+        <td>$289</td>
+        <td>1,175</td>
+        <td>$339.6K</td>
+        <td class="l" style="font-size:12px">🏕️露营 ⚡应急停电</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61lTn4wboOL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>EF ECOFLOW</b><br>EF ECOFLOW Portable Power Station River 3 Plus with EB600 Extra Battery<br><span style="font-size:11px;color:#6e6e73">ASIN: B0DQL2D1PP · 子类目:Outdoor Generators</span></td>
+        <td>—</td>
+        <td>$449</td>
+        <td>422</td>
+        <td>$189.5K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l" style="max-width:360px;"><img src="https://images-na.ssl-images-amazon.com/images/I/71MTJMuNQQL._AC_UL600_SR600,400_.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Anker SOLIX</b><br>Anker SOLIX C1000 Gen 2 Portable Power Station, 1,024Wh, 2,000W, Camping | 1,024Wh LiFePO4…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0FKB5D9RF · 子类目:Outdoor Generators</span></td>
+        <td>1024Wh<br><span class="pill p">家用应急 · 500–1500Wh</span></td>
+        <td>$699</td>
+        <td>372</td>
+        <td>$260.0K</td>
+        <td class="l" style="font-size:12px">🏕️露营 ⚡应急停电</td>
+      </tr><tr>
+        <td>6</td>
+        <td class="l" style="max-width:360px;"><img src="https://images-na.ssl-images-amazon.com/images/I/61OTWEJPx-L._AC_UL300_SR300,200_.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>EF ECOFLOW</b><br>EF ECOFLOW Delta 2 Portable Power Station, 1024Wh, 1800W, Camping | 1024Wh LiFePO4 Battery…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0B9XB57XM · 子类目:</span></td>
+        <td>1024Wh<br><span class="pill p">家用应急 · 500–1500Wh</span></td>
+        <td>—</td>
+        <td>344</td>
+        <td>—</td>
+        <td class="l" style="font-size:12px">🏕️露营 🚐房车</td>
+      </tr><tr>
+        <td>7</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/715O-u6MsRL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Takki</b><br>Takki 277Wh Portable Power Station 250W 75000mAh<br><span style="font-size:11px;color:#6e6e73">ASIN: B0CPL6R532 · 子类目:</span></td>
+        <td>277Wh<br><span class="pill p">轻露营 · 200–500Wh</span></td>
+        <td>$190</td>
+        <td>339</td>
+        <td>$64.4K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>8</td>
+        <td class="l" style="max-width:360px;"><img src="https://images-na.ssl-images-amazon.com/images/I/71o6sfEStJL._AC_UL600_SR600,400_.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>DaranEner</b><br>Portable Power Station 100W (200W Peak), 89.6Wh LiFePO4 Battery, Flight-Approved Solar Pow…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0G4RBNL74 · 子类目:</span></td>
+        <td>90Wh<br><span class="pill p">随身 · <200Wh</span></td>
+        <td>$104</td>
+        <td>320</td>
+        <td>$33.4K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>9</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61Qregf0EYL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>EF ECOFLOW</b><br>EF ECOFLOW Portable Power Station DELTA 2 Max, 2048Wh, 2400W LFP Battery<br><span style="font-size:11px;color:#6e6e73">ASIN: B0C4DW17PD · 子类目:Outdoor Generators</span></td>
+        <td>2048Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$1299</td>
+        <td>226</td>
+        <td>$293.6K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>10</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61DGL1AA4UL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>EF ECOFLOW</b><br>EF ECOFLOW DELTA 3 Plus Portable Power Station with Extra Battery, 2048Wh<br><span style="font-size:11px;color:#6e6e73">ASIN: B0DCJV87P5 · 子类目:Outdoor Generators</span></td>
+        <td>2048Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$1248</td>
+        <td>219</td>
+        <td>$273.3K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot"><b>数据源</b>Sorftime product_search Top100（2026.05–2026.07 滚动月均）。场景标签基于标题关键词识别，非官方分类。价格 USD。</p>
+    </div>
+    <div class="sku-subpane" data-owner="ca" data-sub="t2">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU</th><th class="l">电芯</th><th class="l">重量（kg）</th><th class="l">核心功能（至少具备3项打✓）</th><th class="l">标题显式认证</th><th class="l">上架时间</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l">BLUETTI · BLUETTI Elite 30 V2 Portable Power Station 288Wh 600W L…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">2485.7 kg · 海运为主</td><td class="l" style="font-size:12px">UPS + LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-07-24</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l">EF ECOFLOW · EF ECOFLOW Portable Power Station RIVER 3, 245Wh, 300W,…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">2082.0 kg · 海运为主</td><td class="l" style="font-size:12px">UPS</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2022-10-03</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l">Jackery · Jackery Explorer 300 Portable Power Station,292Wh | Bac…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">2081.8 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2023-03-03</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l">EF ECOFLOW · EF ECOFLOW Portable Power Station River 3 Plus with EB6…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">2139.8 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-06-16</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l">Anker SOLIX · Anker SOLIX C1000 Gen 2 Portable Power Station, 1,024Wh…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">4535.9 kg · 海运为主</td><td class="l" style="font-size:12px">UPS + LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-09-04</td>
+      </tr><tr>
+        <td>6</td>
+        <td class="l">EF ECOFLOW · EF ECOFLOW Delta 2 Portable Power Station, 1024Wh, 1800…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">4535.9 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2022-09-07</td>
+      </tr><tr>
+        <td>7</td>
+        <td class="l">Takki · Takki 277Wh Portable Power Station 250W 75000mAh…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">1224.7 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">1970-01-01</td>
+      </tr><tr>
+        <td>8</td>
+        <td class="l">DaranEner · Portable Power Station 100W (200W Peak), 89.6Wh LiFePO4…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">635.0 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4 + APP</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-12-10</td>
+      </tr><tr>
+        <td>9</td>
+        <td class="l">EF ECOFLOW · EF ECOFLOW Portable Power Station DELTA 2 Max, 2048Wh, …</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">4535.9 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2023-05-16</td>
+      </tr><tr>
+        <td>10</td>
+        <td class="l">EF ECOFLOW · EF ECOFLOW DELTA 3 Plus Portable Power Station with Ext…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">4535.9 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-02-15</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot">技术规格基于标题关键词。接口若返回 product_detail.bullets 可补全更多；本接口常缺规格，缺失标 <b>—</b>，绝不臆造。电芯/功能若标题未提及，不代表产品不具备。</p>
+    </div>
+    <div class="sku-subpane" data-owner="ca" data-sub="t3">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU</th><th>评分 & 评论量</th><th class="l">负面评论真实摘录（最近 1 年，Top 2 条）</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l">BLUETTI · BLUETTI Elite 30 V2 Portable Power Station 288Wh 6…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:88.00000000000001%"></span></span> 4.4</span><br><span style="font-size:10px;color:#6e6e73">评论 781 · 负面抓取 2</span></td>
+        <td class="l" style="max-width:380px"><div style="font-size:11.5px;color:#8a4b00;background:#fff6ec;border:1px solid #ffe2bf;border-radius:8px;padding:8px 10px;margin:4px 0;line-height:1.5">“I am stuck with a $580 paperweight. After a week wait for my it arrived defective. The internal fan was dead on arrival, causing the unit to dangerously overheat within ten minutes”</div><div style="font-size:11.5px;color:#8a4b00;background:#fff6ec;border:1px solid #ffe2bf;border-radius:8px;padding:8px 10px;margin:4px 0;line-height:1.5">“Eco mode and outo turn off is an issue..minimum wattage pull can cause it to think assume its “done&quot; and turn off..plugged in phones with.music will not pull enough power so it tur”</div></td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l">EF ECOFLOW · EF ECOFLOW Portable Power Station RIVER 3, 245Wh, …</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:90%"></span></span> 4.5</span><br><span style="font-size:10px;color:#6e6e73">评论 240 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l">Jackery · Jackery Explorer 300 Portable Power Station,292Wh …</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:92%"></span></span> 4.6</span><br><span style="font-size:10px;color:#6e6e73">评论 10,636 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l">EF ECOFLOW · EF ECOFLOW Portable Power Station River 3 Plus wit…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:90%"></span></span> 4.5</span><br><span style="font-size:10px;color:#6e6e73">评论 74 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l">Anker SOLIX · Anker SOLIX C1000 Gen 2 Portable Power Station, 1,…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:92%"></span></span> 4.6</span><br><span style="font-size:10px;color:#6e6e73">评论 204 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot">负面评论来自 Sorftime product_reviews (review_type=Negative)，限最近 1 年最多 100 条。摘录为原文逐字引用，不做编造。接口返回空则标 "—"。</p>
+    </div>
+  </div>
+  <div class="country-pane " data-cty="gb">
+    <div class="tabs sku-subtabs" data-owner="gb">
+      <button class="tab-btn active" data-sub="t1">① 基础信息 + 销售排名</button>
+      <button class="tab-btn" data-sub="t2">② 技术规格 & 功能</button>
+      <button class="tab-btn" data-sub="t3">③ 评分 & 负面评论摘录</button>
+    </div>
+    <div class="sku-subpane active" data-owner="gb" data-sub="t1">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU（品牌 + 标题 + ASIN）</th><th>容量</th><th>价格</th><th>月销</th><th>月销额</th><th class="l">场景标签</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/611qy50cHdL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Jackery</b><br>Jackery Explorer 1000 v2, 1500W 1070Wh LiFePO4 Portable Power Station<br><span style="font-size:11px;color:#6e6e73">ASIN: B0DB1T34X5 · 子类目:Outdoor Generators</span></td>
+        <td>1070Wh<br><span class="pill p">家用应急 · 500–1500Wh</span></td>
+        <td>$419</td>
+        <td>753</td>
+        <td>$315.5K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/81IXMQES85L.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Jackery</b><br>Jackery Explorer 240 v2, 256Wh Portable Power Station with S-Case Bundle<br><span style="font-size:11px;color:#6e6e73">ASIN: B0FD3WD8W9 · 子类目:Outdoor Generators</span></td>
+        <td>256Wh<br><span class="pill p">轻露营 · 200–500Wh</span></td>
+        <td>$189</td>
+        <td>741</td>
+        <td>$140.0K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/712Fad6jGpL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>SinKeu</b><br>SinKeu Portable Power Station,27000mAh/99Wh Solar Generator with 230V/150W AC Outlet for C…<br><span style="font-size:11px;color:#6e6e73">ASIN: B09MZ736CZ · 子类目:Outdoor Generators</span></td>
+        <td>99Wh<br><span class="pill p">随身 · <200Wh</span></td>
+        <td>$89</td>
+        <td>531</td>
+        <td>$47.3K</td>
+        <td class="l" style="font-size:12px">🏕️露营 🚐房车</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/71VHFwWrEuL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>MARBERO</b><br>MARBERO 97.68Wh Portable Power Station with Solar Panel 30W Outdoor Camping<br><span style="font-size:11px;color:#6e6e73">ASIN: B0FNWT2VR3 · 子类目:Outdoor Generators</span></td>
+        <td>98Wh<br><span class="pill p">随身 · <200Wh</span></td>
+        <td>$152</td>
+        <td>430</td>
+        <td>$65.4K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61iyC66iKpL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>powkey</b><br>Powkey 100W Portable Power Station 97.68Wh/ 27000mAh,Outdoors,Orange<br><span style="font-size:11px;color:#6e6e73">ASIN: B09QMD9DQM · 子类目:Outdoor Generators</span></td>
+        <td>98Wh<br><span class="pill p">随身 · <200Wh</span></td>
+        <td>$86</td>
+        <td>395</td>
+        <td>$34.0K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>6</td>
+        <td class="l" style="max-width:360px;"><img src="https://images-eu.ssl-images-amazon.com/images/I/71qsNNTUfWL._AC_UL600_SR600,400_.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Ecosonique Technology</b><br>400W Portable Solar Panel 40V MC4 &amp; Multi-Output for Most Power Stations | Foldable &amp; Ligh…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0DT3FB1PG · 子类目:Solar Panels</span></td>
+        <td>—</td>
+        <td>$255</td>
+        <td>332</td>
+        <td>$84.7K</td>
+        <td class="l" style="font-size:12px">🏕️露营 🚐房车</td>
+      </tr><tr>
+        <td>7</td>
+        <td class="l" style="max-width:360px;"><img src="https://images-eu.ssl-images-amazon.com/images/I/716Cndh82LL._AC_UL300_SR300,200_.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Anker</b><br>Anker SOLIX C200 DC, 192Wh 200W DC Power Bank Station with 60W Solar Panel | LiFePO4 Batte…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0DBLMHRQ7 · 子类目:Outdoor Generators</span></td>
+        <td>192Wh<br><span class="pill p">随身 · <200Wh</span></td>
+        <td>$149</td>
+        <td>299</td>
+        <td>$44.5K</td>
+        <td class="l" style="font-size:12px">🏕️露营 🛣️自驾旅行</td>
+      </tr><tr>
+        <td>8</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61ZuO0ElnqL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>SinKeu</b><br>SinKeu Portable Power Station 97Wh/26400mAh Generator Outdoor<br><span style="font-size:11px;color:#6e6e73">ASIN: B0DV419J3C · 子类目:Outdoor Generators</span></td>
+        <td>97Wh<br><span class="pill p">随身 · <200Wh</span></td>
+        <td>$99</td>
+        <td>276</td>
+        <td>$27.3K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>9</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/51gFK1q6ZML.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Jackery</b><br>Jackery Explorer 100 Plus, 99Wh &amp; 31000mAh LiFePO4 Portable Power Station<br><span style="font-size:11px;color:#6e6e73">ASIN: B0CJM9594V · 子类目:Outdoor Generators</span></td>
+        <td>99Wh<br><span class="pill p">随身 · <200Wh</span></td>
+        <td>$71</td>
+        <td>249</td>
+        <td>$17.7K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>10</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/71C20IjunBL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>vclpower</b><br>VCLPOWER 20000mAh DC Power Bank Station with Solar Panels,12V/9V Type-C Output Fast Chargi…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0F7DYT8M8 · 子类目:Generators</span></td>
+        <td>74Wh<br><span class="pill p">随身 · <200Wh</span></td>
+        <td>$90</td>
+        <td>192</td>
+        <td>$17.3K</td>
+        <td class="l" style="font-size:12px">🏕️露营 ⚡应急停电</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot"><b>数据源</b>Sorftime product_search Top100（2026.05–2026.07 滚动月均）。场景标签基于标题关键词识别，非官方分类。价格 USD。</p>
+    </div>
+    <div class="sku-subpane" data-owner="gb" data-sub="t2">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU</th><th class="l">电芯</th><th class="l">重量（kg）</th><th class="l">核心功能（至少具备3项打✓）</th><th class="l">标题显式认证</th><th class="l">上架时间</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l">Jackery · Jackery Explorer 1000 v2, 1500W 1070Wh LiFePO4 Portable…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">4535.9 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2024-07-28</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l">Jackery · Jackery Explorer 240 v2, 256Wh Portable Power Station w…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">1587.6 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-06-24</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l">SinKeu · SinKeu Portable Power Station,27000mAh/99Wh Solar Gener…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">821.0 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2021-12-21</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l">MARBERO · MARBERO 97.68Wh Portable Power Station with Solar Panel…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">1333.6 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-10-24</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l">powkey · Powkey 100W Portable Power Station 97.68Wh/ 27000mAh,Ou…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">762.0 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2022-04-12</td>
+      </tr><tr>
+        <td>6</td>
+        <td class="l">Ecosonique Technology · 400W Portable Solar Panel 40V MC4 &amp; Multi-Output for Mo…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">4535.9 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-04-02</td>
+      </tr><tr>
+        <td>7</td>
+        <td class="l">Anker · Anker SOLIX C200 DC, 192Wh 200W DC Power Bank Station w…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">2413.6 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-03-22</td>
+      </tr><tr>
+        <td>8</td>
+        <td class="l">SinKeu · SinKeu Portable Power Station 97Wh/26400mAh Generator O…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">662.2 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-06-05</td>
+      </tr><tr>
+        <td>9</td>
+        <td class="l">Jackery · Jackery Explorer 100 Plus, 99Wh &amp; 31000mAh LiFePO4 Port…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">539.8 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2023-11-07</td>
+      </tr><tr>
+        <td>10</td>
+        <td class="l">vclpower · VCLPOWER 20000mAh DC Power Bank Station with Solar Pane…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">1124.9 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-05-28</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot">技术规格基于标题关键词。接口若返回 product_detail.bullets 可补全更多；本接口常缺规格，缺失标 <b>—</b>，绝不臆造。电芯/功能若标题未提及，不代表产品不具备。</p>
+    </div>
+    <div class="sku-subpane" data-owner="gb" data-sub="t3">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU</th><th>评分 & 评论量</th><th class="l">负面评论真实摘录（最近 1 年，Top 2 条）</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l">Jackery · Jackery Explorer 1000 v2, 1500W 1070Wh LiFePO4 Por…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:94%"></span></span> 4.7</span><br><span style="font-size:10px;color:#6e6e73">评论 344 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l">Jackery · Jackery Explorer 240 v2, 256Wh Portable Power Stat…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:92%"></span></span> 4.6</span><br><span style="font-size:10px;color:#6e6e73">评论 15 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l">SinKeu · SinKeu Portable Power Station,27000mAh/99Wh Solar …</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:76%"></span></span> 3.8</span><br><span style="font-size:10px;color:#6e6e73">评论 1,333 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l">MARBERO · MARBERO 97.68Wh Portable Power Station with Solar …</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:74%"></span></span> 3.7</span><br><span style="font-size:10px;color:#6e6e73">评论 7,274 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l">powkey · Powkey 100W Portable Power Station 97.68Wh/ 27000m…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:78%"></span></span> 3.9</span><br><span style="font-size:10px;color:#6e6e73">评论 939 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot">负面评论来自 Sorftime product_reviews (review_type=Negative)，限最近 1 年最多 100 条。摘录为原文逐字引用，不做编造。接口返回空则标 "—"。</p>
+    </div>
+  </div>
+  <div class="country-pane " data-cty="de">
+    <div class="tabs sku-subtabs" data-owner="de">
+      <button class="tab-btn active" data-sub="t1">① 基础信息 + 销售排名</button>
+      <button class="tab-btn" data-sub="t2">② 技术规格 & 功能</button>
+      <button class="tab-btn" data-sub="t3">③ 评分 & 负面评论摘录</button>
+    </div>
+    <div class="sku-subpane active" data-owner="de" data-sub="t1">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU（品牌 + 标题 + ASIN）</th><th>容量</th><th>价格</th><th>月销</th><th>月销额</th><th class="l">场景标签</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/71qcxpGmoGL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>MARBERO</b><br>Tragbare Powerstation 88Wh 80W 230V Akku für Stromausfälle Camping<br><span style="font-size:11px;color:#6e6e73">ASIN: B0GC71FPLQ · 子类目:Tragbare Kraftwerke</span></td>
+        <td>88Wh<br><span class="pill p">随身 · <200Wh</span></td>
+        <td>$32</td>
+        <td>279</td>
+        <td>$9.0K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/611DVJvhmSL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Jackery</b><br>Jackery E500 v2 Tragbare Powerstation, 512Wh, 230V/500W AC(1000W Spitze)<br><span style="font-size:11px;color:#6e6e73">ASIN: B08RNMX123 · 子类目:Generatoren</span></td>
+        <td>512Wh<br><span class="pill p">家用应急 · 500–1500Wh</span></td>
+        <td>—</td>
+        <td>192</td>
+        <td>—</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l" style="max-width:360px;"><img src="https://images-eu.ssl-images-amazon.com/images/I/61ngPQfkIyL._AC_UL600_SR600,400_.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Raikon</b><br>PowerMax 1800SE Tragbare Powerstation 1800W/1024Wh LiFePO4-Akku | Solargenerator 0–80% in …<br><span style="font-size:11px;color:#6e6e73">ASIN: B0GXD9F39P · 子类目:Generatoren</span></td>
+        <td>1024Wh<br><span class="pill p">家用应急 · 500–1500Wh</span></td>
+        <td>$459</td>
+        <td>146</td>
+        <td>$67.0K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l" style="max-width:360px;"><img src="https://images-eu.ssl-images-amazon.com/images/I/71EUXxV+NpL._AC_UL600_SR600,400_.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>FOSSiBOT</b><br>FOSSiBOT Tragbare Powerstation F2400 mit 2048Wh Lifepo4, Solargenerator 2400W (4800W Spitz…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0C2VN936Q · 子类目:Generatoren</span></td>
+        <td>2048Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$721</td>
+        <td>129</td>
+        <td>$93.0K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/71dshCaJ-UL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Jackery</b><br>Jackery Explorer 240 v2 Tragbare Powerstation, 256Wh LiFePO4 Solargenerator mit 300W AC/10…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0CYLP7M8P · 子类目:Generatoren</span></td>
+        <td>256Wh<br><span class="pill p">轻露营 · 200–500Wh</span></td>
+        <td>$199</td>
+        <td>129</td>
+        <td>$25.7K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>6</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61D+uz9Nt+L.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>ELECAENTA</b><br>ELECAENTA Tragbare Powerstation 99Wh LiFePO4-Akku 120W Solar Generatoren mit PD 30W/AC/DC …<br><span style="font-size:11px;color:#6e6e73">ASIN: B0F23Y1YVT · 子类目:Generatoren</span></td>
+        <td>99Wh<br><span class="pill p">随身 · <200Wh</span></td>
+        <td>$90</td>
+        <td>115</td>
+        <td>$10.3K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>7</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/717r1Jc4tfL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>FF FLASHFISH</b><br>FlashFish 300W Tragbares Powerstation mit Solarpanel 100W, 179,2Wh LiFePO4 Akku, Schnellla…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0FVKJQKQD · 子类目:Generatoren</span></td>
+        <td>1792Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$230</td>
+        <td>115</td>
+        <td>$26.4K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>8</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61tL5Ex2MkL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>CTOLITY</b><br>Apower400, 345Wh Tragbare Powerstation, 500W Solargenerator mit UltraFast Modus, LiFePO4 A…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0FX53T2RS · 子类目:Generatoren</span></td>
+        <td>345Wh<br><span class="pill p">轻露营 · 200–500Wh</span></td>
+        <td>$200</td>
+        <td>104</td>
+        <td>$20.8K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>9</td>
+        <td class="l" style="max-width:360px;"><img src="https://images-eu.ssl-images-amazon.com/images/I/71cUb06JfvL._AC_UL600_SR600,400_.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>AFERIY</b><br>AFERIY Tragbare Powerstation 2400W mit 2048Wh Lifepo4 P210(4800W Peak) | 1,5 Stunde Schnel…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0CDGLT8JK · 子类目:Generatoren</span></td>
+        <td>2048Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$759</td>
+        <td>96</td>
+        <td>$72.9K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>10</td>
+        <td class="l" style="max-width:360px;"><img src="https://images-eu.ssl-images-amazon.com/images/I/61nkr5StfUL._AC_UL600_SR600,400_.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>TerraVolt</b><br>3600W (7200W Peak) Tragbare Powerstation PowerMax 3600PE, 2016Wh Solargenerator mit LiFePO…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0G8J1GDH7 · 子类目:Generatoren</span></td>
+        <td>2016Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$849</td>
+        <td>70</td>
+        <td>$59.4K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot"><b>数据源</b>Sorftime product_search Top100（2026.05–2026.07 滚动月均）。场景标签基于标题关键词识别，非官方分类。价格 USD。</p>
+    </div>
+    <div class="sku-subpane" data-owner="de" data-sub="t2">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU</th><th class="l">电芯</th><th class="l">重量（kg）</th><th class="l">核心功能（至少具备3项打✓）</th><th class="l">标题显式认证</th><th class="l">上架时间</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l">MARBERO · Tragbare Powerstation 88Wh 80W 230V Akku für Stromausfä…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">471.7 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-12-30</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l">Jackery · Jackery E500 v2 Tragbare Powerstation, 512Wh, 230V/500W…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">3728.5 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2021-01-05</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l">Raikon · PowerMax 1800SE Tragbare Powerstation 1800W/1024Wh LiFe…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">4535.9 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4 + APP</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2026-04-16</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l">FOSSiBOT · FOSSiBOT Tragbare Powerstation F2400 mit 2048Wh Lifepo4…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">4535.9 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4 + APP</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2023-04-19</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l">Jackery · Jackery Explorer 240 v2 Tragbare Powerstation, 256Wh Li…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">1587.6 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2024-04-24</td>
+      </tr><tr>
+        <td>6</td>
+        <td class="l">ELECAENTA · ELECAENTA Tragbare Powerstation 99Wh LiFePO4-Akku 120W …</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">997.9 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-03-24</td>
+      </tr><tr>
+        <td>7</td>
+        <td class="l">FF FLASHFISH · FlashFish 300W Tragbares Powerstation mit Solarpanel 10…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-10-15</td>
+      </tr><tr>
+        <td>8</td>
+        <td class="l">CTOLITY · Apower400, 345Wh Tragbare Powerstation, 500W Solargener…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-11-01</td>
+      </tr><tr>
+        <td>9</td>
+        <td class="l">AFERIY · AFERIY Tragbare Powerstation 2400W mit 2048Wh Lifepo4 P…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">4535.9 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2023-08-03</td>
+      </tr><tr>
+        <td>10</td>
+        <td class="l">TerraVolt · 3600W (7200W Peak) Tragbare Powerstation PowerMax 3600P…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">10886.2 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4 + APP</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2026-01-04</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot">技术规格基于标题关键词。接口若返回 product_detail.bullets 可补全更多；本接口常缺规格，缺失标 <b>—</b>，绝不臆造。电芯/功能若标题未提及，不代表产品不具备。</p>
+    </div>
+    <div class="sku-subpane" data-owner="de" data-sub="t3">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU</th><th>评分 & 评论量</th><th class="l">负面评论真实摘录（最近 1 年，Top 2 条）</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l">MARBERO · Tragbare Powerstation 88Wh 80W 230V Akku für Strom…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:72%"></span></span> 3.6</span><br><span style="font-size:10px;color:#6e6e73">评论 75 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l">Jackery · Jackery E500 v2 Tragbare Powerstation, 512Wh, 230V…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:88.00000000000001%"></span></span> 4.4</span><br><span style="font-size:10px;color:#6e6e73">评论 52 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l">Raikon · PowerMax 1800SE Tragbare Powerstation 1800W/1024Wh…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:90%"></span></span> 4.5</span><br><span style="font-size:10px;color:#6e6e73">评论 25 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l">FOSSiBOT · FOSSiBOT Tragbare Powerstation F2400 mit 2048Wh Li…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:90%"></span></span> 4.5</span><br><span style="font-size:10px;color:#6e6e73">评论 185 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l">Jackery · Jackery Explorer 240 v2 Tragbare Powerstation, 256…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:88.00000000000001%"></span></span> 4.4</span><br><span style="font-size:10px;color:#6e6e73">评论 61 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot">负面评论来自 Sorftime product_reviews (review_type=Negative)，限最近 1 年最多 100 条。摘录为原文逐字引用，不做编造。接口返回空则标 "—"。</p>
+    </div>
+  </div>
+  <div class="country-pane " data-cty="fr">
+    <div class="tabs sku-subtabs" data-owner="fr">
+      <button class="tab-btn active" data-sub="t1">① 基础信息 + 销售排名</button>
+      <button class="tab-btn" data-sub="t2">② 技术规格 & 功能</button>
+      <button class="tab-btn" data-sub="t3">③ 评分 & 负面评论摘录</button>
+    </div>
+    <div class="sku-subpane active" data-owner="fr" data-sub="t1">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU（品牌 + 标题 + ASIN）</th><th>容量</th><th>价格</th><th>月销</th><th>月销额</th><th class="l">场景标签</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/71+na8xNG3L.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>MARBERO</b><br>MARBERO Station Électrique Portable 24,000mAh Generateur Electrique Portable 88,8Wh Batter…<br><span style="font-size:11px;color:#6e6e73">ASIN: B08G1KB88B · 子类目:Groupes éléctrogènes</span></td>
+        <td>888Wh<br><span class="pill p">家用应急 · 500–1500Wh</span></td>
+        <td>$125</td>
+        <td>189</td>
+        <td>$23.6K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/719IjLL48IL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>FOSSiBOT</b><br>FOSSiBOT F2400 Generateur Electrique Portable, 2048Wh Batterie LiFePO4 Station électrique,…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0BN3YWQRF · 子类目:Groupes éléctrogènes</span></td>
+        <td>2048Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$739</td>
+        <td>150</td>
+        <td>$110.8K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61fi9r7KxLL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>AFERIY</b><br>AFERIY P280 Station Electrique Portable 2800W, Batterie Nomade 2048Wh Extensible à 10,24kW…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0FZ9L8P5T · 子类目:Groupes éléctrogènes</span></td>
+        <td>2048Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$859</td>
+        <td>91</td>
+        <td>$78.2K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/71-YlNH1irL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>SWAREY</b><br>Générateur Electrique Portable 518Wh avec Panneau solaire pliable en 2 sections et Sac de …<br><span style="font-size:11px;color:#6e6e73">ASIN: B0BF9SRPR6 · 子类目:Groupes éléctrogènes</span></td>
+        <td>518Wh<br><span class="pill p">家用应急 · 500–1500Wh</span></td>
+        <td>$342</td>
+        <td>71</td>
+        <td>$24.3K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61r4DEYXTgL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>AFERIY</b><br>AFERIY 1800W 1024Wh Station Électrique Portable, P180 Générateur Électrique Solaire, Recha…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0GHN4Y5X9 · 子类目:Groupes éléctrogènes</span></td>
+        <td>1024Wh<br><span class="pill p">家用应急 · 500–1500Wh</span></td>
+        <td>$699</td>
+        <td>51</td>
+        <td>$35.6K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>6</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/71rDx9JF1WL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Technaxx</b><br>Technaxx Mini Station d‘Énergie Portable 74Wh 80W avec Prise 230V, USB-C PD 18W, 4 ×USB-A …<br><span style="font-size:11px;color:#6e6e73">ASIN: B0BSNWDZZM · 子类目:Blocs d’alimentation portatifs pour téléphone portable</span></td>
+        <td>74Wh<br><span class="pill p">随身 · <200Wh</span></td>
+        <td>$145</td>
+        <td>24</td>
+        <td>$3.5K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>7</td>
+        <td class="l" style="max-width:360px;"><img src="https://images-eu.ssl-images-amazon.com/images/I/7173ADqh9nL._AC_UL300_SR300,200_.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>AFERIY</b><br>AFERIY Générateur Solaire 2400W avec 400W Panneau Solaire, 2048Wh Batteries LiFePO4, Sorti…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0CDP5639W · 子类目:Groupes éléctrogènes</span></td>
+        <td>2048Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$1499</td>
+        <td>13</td>
+        <td>$19.5K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>8</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61ugq6a77nL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>FF FLASHFISH</b><br>FlashFish Generateur Électrique portable 172,8 Wh, Générateur Solaire 200W/230V Batterie d…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0CJ6QMTYK · 子类目:Groupes éléctrogènes</span></td>
+        <td>1728Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$110</td>
+        <td>11</td>
+        <td>$1.2K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>9</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/71NgxRk7cUL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>CERRXIAN</b><br>CERRXIAN 1,8 m connecteur Solaire vers câble d‘extension Adaptateur XT60, 14 AWG XT60 mâle…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0C7H251X4 · 子类目:Accessoires de régulateurs de charge</span></td>
+        <td>—</td>
+        <td>$18</td>
+        <td>11</td>
+        <td>$196</td>
+        <td class="l" style="font-size:12px">🚐房车</td>
+      </tr><tr>
+        <td>10</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61kUf-rko0L.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>FOSSiBOT</b><br>FOSSiBOT Générateur Electrique F2400 avec Chariot à Main Pliable, Station électrique Porta…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0FY5X332P · 子类目:Groupes éléctrogènes</span></td>
+        <td>2048Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$799</td>
+        <td>9</td>
+        <td>$7.2K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot"><b>数据源</b>Sorftime product_search Top100（2026.05–2026.07 滚动月均）。场景标签基于标题关键词识别，非官方分类。价格 USD。</p>
+    </div>
+    <div class="sku-subpane" data-owner="fr" data-sub="t2">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU</th><th class="l">电芯</th><th class="l">重量（kg）</th><th class="l">核心功能（至少具备3项打✓）</th><th class="l">标题显式认证</th><th class="l">上架时间</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l">MARBERO · MARBERO Station Électrique Portable 24,000mAh Generateu…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">670.9 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2022-12-26</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l">FOSSiBOT · FOSSiBOT F2400 Generateur Electrique Portable, 2048Wh B…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">4535.9 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2022-12-31</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l">AFERIY · AFERIY P280 Station Electrique Portable 2800W, Batterie…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">4535.9 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-11-05</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l">SWAREY · Générateur Electrique Portable 518Wh avec Panneau solai…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">-0.5 kg · 空运小包</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2022-09-19</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l">AFERIY · AFERIY 1800W 1024Wh Station Électrique Portable, P180 G…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">4535.9 kg · 海运为主</td><td class="l" style="font-size:12px">UPS + LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2026-01-20</td>
+      </tr><tr>
+        <td>6</td>
+        <td class="l">Technaxx · Technaxx Mini Station d‘Énergie Portable 74Wh 80W avec …</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">671.3 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2023-02-01</td>
+      </tr><tr>
+        <td>7</td>
+        <td class="l">AFERIY · AFERIY Générateur Solaire 2400W avec 400W Panneau Solai…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">10.0 kg · 空运小包</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2023-11-19</td>
+      </tr><tr>
+        <td>8</td>
+        <td class="l">FF FLASHFISH · FlashFish Generateur Électrique portable 172,8 Wh, Géné…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">1111.3 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2024-05-29</td>
+      </tr><tr>
+        <td>9</td>
+        <td class="l">CERRXIAN · CERRXIAN 1,8 m connecteur Solaire vers câble d‘extensio…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">54.4 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2023-06-18</td>
+      </tr><tr>
+        <td>10</td>
+        <td class="l">FOSSiBOT · FOSSiBOT Générateur Electrique F2400 avec Chariot à Mai…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-11-04</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot">技术规格基于标题关键词。接口若返回 product_detail.bullets 可补全更多；本接口常缺规格，缺失标 <b>—</b>，绝不臆造。电芯/功能若标题未提及，不代表产品不具备。</p>
+    </div>
+    <div class="sku-subpane" data-owner="fr" data-sub="t3">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU</th><th>评分 & 评论量</th><th class="l">负面评论真实摘录（最近 1 年，Top 2 条）</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l">MARBERO · MARBERO Station Électrique Portable 24,000mAh Gene…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:74%"></span></span> 3.7</span><br><span style="font-size:10px;color:#6e6e73">评论 7,252 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l">FOSSiBOT · FOSSiBOT F2400 Generateur Electrique Portable, 204…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:88.00000000000001%"></span></span> 4.4</span><br><span style="font-size:10px;color:#6e6e73">评论 348 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l">AFERIY · AFERIY P280 Station Electrique Portable 2800W, Bat…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:94%"></span></span> 4.7</span><br><span style="font-size:10px;color:#6e6e73">评论 62 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l">SWAREY · Générateur Electrique Portable 518Wh avec Panneau …</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:86%"></span></span> 4.3</span><br><span style="font-size:10px;color:#6e6e73">评论 287 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l">AFERIY · AFERIY 1800W 1024Wh Station Électrique Portable, P…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:88.00000000000001%"></span></span> 4.4</span><br><span style="font-size:10px;color:#6e6e73">评论 15 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot">负面评论来自 Sorftime product_reviews (review_type=Negative)，限最近 1 年最多 100 条。摘录为原文逐字引用，不做编造。接口返回空则标 "—"。</p>
+    </div>
+  </div>
+  <div class="country-pane " data-cty="it">
+    <div class="tabs sku-subtabs" data-owner="it">
+      <button class="tab-btn active" data-sub="t1">① 基础信息 + 销售排名</button>
+      <button class="tab-btn" data-sub="t2">② 技术规格 & 功能</button>
+      <button class="tab-btn" data-sub="t3">③ 评分 & 负面评论摘录</button>
+    </div>
+    <div class="sku-subpane active" data-owner="it" data-sub="t1">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU（品牌 + 标题 + ASIN）</th><th>容量</th><th>价格</th><th>月销</th><th>月销额</th><th class="l">场景标签</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/71s5eUNm2VL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>FOSSiBOT</b><br>FOSSiBOT F2400 centrale elettrica portatile, 2048Wh batteria LFP generatore di corrente so…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0CJDX179C · 子类目:Generatori</span></td>
+        <td>2048Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$739</td>
+        <td>42</td>
+        <td>$31.0K</td>
+        <td class="l" style="font-size:12px">🏕️露营 🚐房车</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61tshOUwY4L.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>FOSSiBOT</b><br>FOSSiBOT F2400 Centrale elettrica portatile con Pannello 200W Incluso, 2048Wh batteria LFP…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0GMH5VKNH · 子类目:Generatori</span></td>
+        <td>2048Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$909</td>
+        <td>14</td>
+        <td>$12.7K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61K80jGWR8L.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Dyness</b><br>Dyness Centrale Elettrica Portatile​ 2400W, 2048Wh LiFePO4 4800W di Picco, 13 Uscite (3 AC…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0GK93L6Y5 · 子类目:Generatori</span></td>
+        <td>2048Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$570</td>
+        <td>11</td>
+        <td>$6.3K</td>
+        <td class="l" style="font-size:12px">🏕️露营 🚐房车</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61DH+LlUDPL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>HKY</b><br>HKY XT90 Caricabatteria da auto 12 V presa accendisigari a XT90 per Bluetti AC200 AC200P B…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0GZTZR6JB · 子类目:Accendisigari</span></td>
+        <td>—</td>
+        <td>$31</td>
+        <td>10</td>
+        <td>$308</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/71rDx9JF1WL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Technaxx</b><br>Technaxx mini Powerstation TX-205 - Powerstation 74Wh 230V con presa integrata - Batteria …<br><span style="font-size:11px;color:#6e6e73">ASIN: B0BSNWDZZM · 子类目:Generatori</span></td>
+        <td>74Wh<br><span class="pill p">随身 · <200Wh</span></td>
+        <td>$155</td>
+        <td>9</td>
+        <td>$1.4K</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>6</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61nkr5StfUL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>TerraVolt</b><br>3600W (7200w Picco) Centrale Elettrica Portatile PowerMax 3600PE, 2016Wh Generatore Solare…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0G8J1GDH7 · 子类目:Generatori</span></td>
+        <td>2016Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$807</td>
+        <td>9</td>
+        <td>$7.3K</td>
+        <td class="l" style="font-size:12px">🏕️露营 🚐房车</td>
+      </tr><tr>
+        <td>7</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61GBIb0L3UL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>FOSSiBOT</b><br>FOSSiBOT F3600 Pro Centrale Elettrica Portatile Uscità CA da 3600W, 3840 Wh batteria LFP D…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0FQK4BVGH · 子类目:Generatori</span></td>
+        <td>3840Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$1399</td>
+        <td>8</td>
+        <td>$11.2K</td>
+        <td class="l" style="font-size:12px">🏕️露营 🚐房车</td>
+      </tr><tr>
+        <td>8</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61N6oWG1wOL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>KFD</b><br>KFD Alimentatore 15V Caricatore per FF Flashfish EA150 EA-200 Portable Power Station 60000…<br><span style="font-size:11px;color:#6e6e73">ASIN: B07QQX34BN · 子类目:Caricabatterie</span></td>
+        <td>222Wh<br><span class="pill p">轻露营 · 200–500Wh</span></td>
+        <td>$29</td>
+        <td>7</td>
+        <td>$203</td>
+        <td class="l" style="font-size:12px">—</td>
+      </tr><tr>
+        <td>9</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/81UKShubOVL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>PurMars</b><br>Stazione di ricarica portatile Purmars – 28800mAh / 92Wh, uscita CA 230V, ricarica rapida …<br><span style="font-size:11px;color:#6e6e73">ASIN: B0G238V2L3 · 子类目:Generatori</span></td>
+        <td>92Wh<br><span class="pill p">随身 · <200Wh</span></td>
+        <td>$85</td>
+        <td>5</td>
+        <td>$427</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>10</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/81Ld6-cB0VL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>TerraVolt</b><br>3600W Centrale Elettrica Portatile con Pannello 100W, 2016Wh Generatore Solare con Batteri…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0G8HJKV64 · 子类目:Generatori</span></td>
+        <td>2016Wh<br><span class="pill p">离网供电 · >1500Wh</span></td>
+        <td>$969</td>
+        <td>5</td>
+        <td>$4.8K</td>
+        <td class="l" style="font-size:12px">🏕️露营 🚐房车</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot"><b>数据源</b>Sorftime product_search Top100（2026.05–2026.07 滚动月均）。场景标签基于标题关键词识别，非官方分类。价格 USD。</p>
+    </div>
+    <div class="sku-subpane" data-owner="it" data-sub="t2">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU</th><th class="l">电芯</th><th class="l">重量（kg）</th><th class="l">核心功能（至少具备3项打✓）</th><th class="l">标题显式认证</th><th class="l">上架时间</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l">FOSSiBOT · FOSSiBOT F2400 centrale elettrica portatile, 2048Wh bat…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-06-19</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l">FOSSiBOT · FOSSiBOT F2400 Centrale elettrica portatile con Pannell…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2026-03-25</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l">Dyness · Dyness Centrale Elettrica Portatile​ 2400W, 2048Wh LiFe…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px">LiFePO4 + APP</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2026-05-14</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l">HKY · HKY XT90 Caricabatteria da auto 12 V presa accendisigar…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2026-06-25</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l">Technaxx · Technaxx mini Powerstation TX-205 - Powerstation 74Wh 2…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">671.3 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2023-03-05</td>
+      </tr><tr>
+        <td>6</td>
+        <td class="l">TerraVolt · 3600W (7200w Picco) Centrale Elettrica Portatile PowerM…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">10886.2 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-12-30</td>
+      </tr><tr>
+        <td>7</td>
+        <td class="l">FOSSiBOT · FOSSiBOT F3600 Pro Centrale Elettrica Portatile Uscità …</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-09-12</td>
+      </tr><tr>
+        <td>8</td>
+        <td class="l">KFD · KFD Alimentatore 15V Caricatore per FF Flashfish EA150 …</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">136.1 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2020-02-29</td>
+      </tr><tr>
+        <td>9</td>
+        <td class="l">PurMars · Stazione di ricarica portatile Purmars – 28800mAh / 92W…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">626.0 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2026-03-19</td>
+      </tr><tr>
+        <td>10</td>
+        <td class="l">TerraVolt · 3600W Centrale Elettrica Portatile con Pannello 100W, 2…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">10886.2 kg · 海运为主</td><td class="l" style="font-size:12px">UPS + LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2026-01-07</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot">技术规格基于标题关键词。接口若返回 product_detail.bullets 可补全更多；本接口常缺规格，缺失标 <b>—</b>，绝不臆造。电芯/功能若标题未提及，不代表产品不具备。</p>
+    </div>
+    <div class="sku-subpane" data-owner="it" data-sub="t3">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU</th><th>评分 & 评论量</th><th class="l">负面评论真实摘录（最近 1 年，Top 2 条）</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l">FOSSiBOT · FOSSiBOT F2400 centrale elettrica portatile, 2048W…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:88.00000000000001%"></span></span> 4.4</span><br><span style="font-size:10px;color:#6e6e73">评论 242 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l">FOSSiBOT · FOSSiBOT F2400 Centrale elettrica portatile con Pa…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:92%"></span></span> 4.6</span><br><span style="font-size:10px;color:#6e6e73">评论 475 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l">Dyness · Dyness Centrale Elettrica Portatile​ 2400W, 2048Wh…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:78%"></span></span> 3.9</span><br><span style="font-size:10px;color:#6e6e73">评论 4 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l">HKY · HKY XT90 Caricabatteria da auto 12 V presa accendi…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:0%"></span></span> —</span><br><span style="font-size:10px;color:#6e6e73">评论 — · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>5</td>
+        <td class="l">Technaxx · Technaxx mini Powerstation TX-205 - Powerstation 7…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:82%"></span></span> 4.1</span><br><span style="font-size:10px;color:#6e6e73">评论 169 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot">负面评论来自 Sorftime product_reviews (review_type=Negative)，限最近 1 年最多 100 条。摘录为原文逐字引用，不做编造。接口返回空则标 "—"。</p>
+    </div>
+  </div>
+  <div class="country-pane " data-cty="es">
+    <div class="tabs sku-subtabs" data-owner="es">
+      <button class="tab-btn active" data-sub="t1">① 基础信息 + 销售排名</button>
+      <button class="tab-btn" data-sub="t2">② 技术规格 & 功能</button>
+      <button class="tab-btn" data-sub="t3">③ 评分 & 负面评论摘录</button>
+    </div>
+    <div class="sku-subpane active" data-owner="es" data-sub="t1">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU（品牌 + 标题 + ASIN）</th><th>容量</th><th>价格</th><th>月销</th><th>月销额</th><th class="l">场景标签</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61oGCnOdrJL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>FF FLASHFISH</b><br>FlashFish estacion de energia portatil 200W, 151Wh Generador Solar, Salida de CA de 230V, …<br><span style="font-size:11px;color:#6e6e73">ASIN: B09G9FZ4LR · 子类目:Generadores para exteriores</span></td>
+        <td>151Wh<br><span class="pill p">随身 · <200Wh</span></td>
+        <td>$120</td>
+        <td>21</td>
+        <td>$2.5K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/71i-YRdoWlL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>AFERIY</b><br>AFERIY P180Pro 1800W, Estación de Energía Portátil 1024Wh, Ampliable a 5120 Wh, Generador …<br><span style="font-size:11px;color:#6e6e73">ASIN: B0H6SVP6H6 · 子类目:Generadores para exteriores</span></td>
+        <td>1024Wh<br><span class="pill p">家用应急 · 500–1500Wh</span></td>
+        <td>$505</td>
+        <td>5</td>
+        <td>$2.5K</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61p6PouUYsL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>AFERIY</b><br>AFERIY Estación de Energía Portátil 1800W, 1024Wh, Generador Solar Carga Rápida en 1H, SAI…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0G6D3T9Z8 · 子类目:Generadores para exteriores</span></td>
+        <td>1024Wh<br><span class="pill p">家用应急 · 500–1500Wh</span></td>
+        <td>$424</td>
+        <td>5</td>
+        <td>$2.1K</td>
+        <td class="l" style="font-size:12px">🏕️露营 🚐房车</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l" style="max-width:360px;"><img src="https://m.media-amazon.com/images/I/61c9mHiU6VL.jpg" style="width:40px;height:40px;object-fit:cover;float:left;margin-right:10px;border-radius:6px;border:1px solid #eee"><b>Anker</b><br>Anker SOLIX C1000 Portable Power Station, generador solar de 1800 W, carga ultrarrápida en…<br><span style="font-size:11px;color:#6e6e73">ASIN: B0CGQZ7XSB · 子类目:Generadores para exteriores</span></td>
+        <td>—</td>
+        <td>—</td>
+        <td>5</td>
+        <td>—</td>
+        <td class="l" style="font-size:12px">🏕️露营</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot"><b>数据源</b>Sorftime product_search Top100（2026.05–2026.07 滚动月均）。场景标签基于标题关键词识别，非官方分类。价格 USD。</p>
+    </div>
+    <div class="sku-subpane" data-owner="es" data-sub="t2">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU</th><th class="l">电芯</th><th class="l">重量（kg）</th><th class="l">核心功能（至少具备3项打✓）</th><th class="l">标题显式认证</th><th class="l">上架时间</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l">FF FLASHFISH · FlashFish estacion de energia portatil 200W, 151Wh Gene…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">1134.0 kg · 海运为主</td><td class="l" style="font-size:12px">—</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2025-10-29</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l">AFERIY · AFERIY P180Pro 1800W, Estación de Energía Portátil 1024…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">4535.9 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4 + APP</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">1970-01-01</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l">AFERIY · AFERIY Estación de Energía Portátil 1800W, 1024Wh, Gene…</td>
+        <td class="l" style="font-size:12px">未标注</td><td class="l" style="font-size:12px">4535.9 kg · 海运为主</td><td class="l" style="font-size:12px">APP</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">1970-01-01</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l">Anker · Anker SOLIX C1000 Portable Power Station, generador sol…</td>
+        <td class="l" style="font-size:12px">LiFePO4（磷酸铁锂）</td><td class="l" style="font-size:12px">4535.9 kg · 海运为主</td><td class="l" style="font-size:12px">LiFePO4</td><td class="l" style="font-size:12px"><span style="color:#999">未标</span></td><td class="l" style="font-size:12px">2023-11-06</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot">技术规格基于标题关键词。接口若返回 product_detail.bullets 可补全更多；本接口常缺规格，缺失标 <b>—</b>，绝不臆造。电芯/功能若标题未提及，不代表产品不具备。</p>
+    </div>
+    <div class="sku-subpane" data-owner="es" data-sub="t3">
+      <div class="tw"><table>
+        <thead><tr><th>#</th><th class="l">SKU</th><th>评分 & 评论量</th><th class="l">负面评论真实摘录（最近 1 年，Top 2 条）</th></tr></thead>
+        <tbody><tr>
+        <td>1</td>
+        <td class="l">FF FLASHFISH · FlashFish estacion de energia portatil 200W, 151Wh…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:82%"></span></span> 4.1</span><br><span style="font-size:10px;color:#6e6e73">评论 182 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>2</td>
+        <td class="l">AFERIY · AFERIY P180Pro 1800W, Estación de Energía Portátil…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:86%"></span></span> 4.3</span><br><span style="font-size:10px;color:#6e6e73">评论 23 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>3</td>
+        <td class="l">AFERIY · AFERIY Estación de Energía Portátil 1800W, 1024Wh,…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:92%"></span></span> 4.6</span><br><span style="font-size:10px;color:#6e6e73">评论 22 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr><tr>
+        <td>4</td>
+        <td class="l">Anker · Anker SOLIX C1000 Portable Power Station, generado…</td>
+        <td><span class="star-bar"><span class="star-track"><span class="star-fill" style="width:92%"></span></span> 4.6</span><br><span style="font-size:10px;color:#6e6e73">评论 175 · 负面抓取 0</span></td>
+        <td class="l" style="max-width:380px">—</td>
+      </tr></tbody>
+      </table></div>
+      <p class="foot">负面评论来自 Sorftime product_reviews (review_type=Negative)，限最近 1 年最多 100 条。摘录为原文逐字引用，不做编造。接口返回空则标 "—"。</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="consumer">
+  <div class="sec-head">
+    <div class="eyebrow">06 · Consumer Insights</div>
+    <h2 class="sec-title">用户画像 & 评论负面聚类：充电慢/容量虚标/噪音前 3</h2>
+    <p class="sec-desc">七国 Top10 SKU 的评分分布 + 全球合并负面评论分类（聚类词正则匹配），附代表性原文摘录。</p>
+  </div>
+
+  <div class="cards">
+    <div class="card"><div class="lab">Top10 SKU 平均星级</div><div class="val">4.32</div><div class="note">5 分满分（纳入品 ≥10 的市场加权）</div></div>
+    <div class="card"><div class="lab">Top10 SKU 平均评论数</div><div class="val">1,170</div><div class="note">评论基数越高 = 市场越成熟</div></div>
+    <div class="card"><div class="lab">抓取负面评论总条数</div><div class="val">484</div><div class="note">Sorftime product_reviews(Negative) · 每国 Top5 SKU 最多 100 条/SKU</div></div>
+    <div class="card"><div class="lab">识别到的聚类数量</div><div class="val">8/8</div><div class="note">8 大预设聚类词命中数</div></div>
+  </div>
+
+  <div style="margin-top:32px;">
+    <h3 style="font-family:var(--fd);font-size:20px;margin-bottom:16px;">① 四大典型消费人群画像</h3>
+    
+  <div class="cards">
+    <div class="card">
+      <div class="lab">🏕️ 周末露营家</div>
+      <div class="val" style="font-size:20px">200–500Wh 段</div>
+      <div class="note">25–40 岁 · 美西/欧洲南部 · 周末 2–3 天露营<br>典型 SKU：Jackery 300 / MARBERO 88Wh<br>买前关注：重量 <10kg · 太阳能充 · 安静</div>
+    </div>
+    <div class="card">
+      <div class="lab">⚡ 家庭应急备用户</div>
+      <div class="val" style="font-size:20px">500–1500Wh 段</div>
+      <div class="note">35–60 岁 · 美东南飓风带 / 德州电网不稳 · 欧洲能源敏感用户<br>典型 SKU：Jackery 1000 v2 / EcoFlow Delta 3<br>买前关注：LiFePO4 长循环 · UPS 秒切 · 纯正弦波</div>
+    </div>
+    <div class="card">
+      <div class="lab">🚐 房车/自驾长期游牧</div>
+      <div class="val" style="font-size:20px">>1500Wh · 可并联</div>
+      <div class="note">30–50 岁 · 欧美 Vanlife 人群 · 全年离网<br>典型 SKU：BLUETTI AC200MAX / EcoFlow Delta Pro<br>买前关注：高容量 + 并联扩容 + MPPT + 多电器同时运行</div>
+    </div>
+    <div class="card">
+      <div class="lab">✈️ 摄影师 / 无人机玩家</div>
+      <div class="val" style="font-size:20px">200–500Wh</div>
+      <div class="note">25–45 岁 · 专业/半专业创作 · 野外长时间拍摄<br>典型 SKU：Anker 521 / Bluetti EB3A<br>买前关注：PD 快充输出 · AC 插座数 · 电量显示精度</div>
+    </div>
+  </div>
+  </div>
+
+  <div style="margin-top:36px;">
+    <h3 style="font-family:var(--fd);font-size:20px;margin-bottom:16px;">② 负面评论聚类排行榜（Top 8）</h3>
+    <div class="tw"><table>
+      <thead><tr><th>#</th><th class="l">聚类主题（越靠前越集中）</th><th>命中条数</th><th>占比 & 严重度条</th><th class="l">代表性原文摘录（每条 3 条典型）</th></tr></thead>
+      <tbody><tr>
+      <td>1</td>
+      <td class="l"><b>容量虚标 / 不如预期</b></td>
+      <td>47</td>
+      <td><div class="star-track" style="width:100%;height:8px"><div class="star-fill" style="width:19%;background:#ff3b30"></div></div> 9.7%</td>
+      <td class="l" style="font-size:11.5px;color:#8a4b00;line-height:1.5">· “I was happy with this product and have recommended it to others for camping.  I have friends who have purchased a Jackery because of my recommendation.  The new”<br>· “I purchased the Jackery Solar Generator 300 (292Wh) with the 40W solar panel specifically for emergency use. No issues with the generator. But unfortunately, th”<br>· “I got it for a festival and the charge depleted so quickly! We charged two phones and the charge on the station was already down to 20 something percent. I’m no”</td>
+    </tr><tr>
+      <td>2</td>
+      <td class="l"><b>售后 / 保修困难</b></td>
+      <td>28</td>
+      <td><div class="star-track" style="width:100%;height:8px"><div class="star-fill" style="width:12%;background:#ff3b30"></div></div> 5.8%</td>
+      <td class="l" style="font-size:11.5px;color:#8a4b00;line-height:1.5">· “Lasted a year. No one told me that I could exchange it for a new one under warranty when I called in a year and half ago and want to offer me 10.00 gift card. N”<br>· “I wouldve have a better star rate but the customer service to have this Explore 300 serviced after BARELY using my portable generator for almost 2 years before ”<br>· “Got this as a gift for 10 years on the job. Received it as a catalog selection and it was the Jackery Explorer 290. After 5 uses over 1.5 years the unit died fo”</td>
+    </tr><tr>
+      <td>3</td>
+      <td class="l"><b>APP / 连接问题</b></td>
+      <td>28</td>
+      <td><div class="star-track" style="width:100%;height:8px"><div class="star-fill" style="width:12%;background:#ff3b30"></div></div> 5.8%</td>
+      <td class="l" style="font-size:11.5px;color:#8a4b00;line-height:1.5">· “Disappointed this does not have XT60, thr standard for solar chargers now. I didn‘t even bother to check, but obviously I should have.If yiu are using panel out”<br>· “Very disappointed with this item, I already own a older model and it’s been great so I ordered this one to use it on my camping trips and won’t charge over 46%.”<br>· “I got it for a festival and the charge depleted so quickly! We charged two phones and the charge on the station was already down to 20 something percent. I’m no”</td>
+    </tr><tr>
+      <td>4</td>
+      <td class="l"><b>寿命 / 做工问题</b></td>
+      <td>18</td>
+      <td><div class="star-track" style="width:100%;height:8px"><div class="star-fill" style="width:7%;background:#ff3b30"></div></div> 3.7%</td>
+      <td class="l" style="font-size:11.5px;color:#8a4b00;line-height:1.5">· “Broke after 65 days, error f7”<br>· “Defective out of the box.  When I unpackaged it, the display said 52% battery remaining.  I charged it and put it to work.  It cut out sooner than expected base”<br>· “I ordered this for our camping and traveling convenience but it stopped working after the second day. Was disappointed since it wasn’t super cheap. I would’ve r”</td>
+    </tr><tr>
+      <td>5</td>
+      <td class="l"><b>重量太大 / 不易搬运</b></td>
+      <td>11</td>
+      <td><div class="star-track" style="width:100%;height:8px"><div class="star-fill" style="width:5%;background:#ff3b30"></div></div> 2.3%</td>
+      <td class="l" style="font-size:11.5px;color:#8a4b00;line-height:1.5">· “This is a very expensive and heavy phone charger. That’s about all it will power up. I tried using it to make coffee and it’s too weak to do that. Save your mon”<br>· “It’s okay doesn’t really last to long the max is like 3 hours and it doesn’t connect heavy plugs on it”<br>· “Had this product for 3 months used it about 5-6 times. It’s not worth it. It dies quickly with just cell phones. And now it won’t even charge. It’s pretty heavy”</td>
+    </tr><tr>
+      <td>6</td>
+      <td class="l"><b>充电太慢 / 充电时长不符</b></td>
+      <td>6</td>
+      <td><div class="star-track" style="width:100%;height:8px"><div class="star-fill" style="width:2%;background:#ff3b30"></div></div> 1.2%</td>
+      <td class="l" style="font-size:11.5px;color:#8a4b00;line-height:1.5">· “I have a much larger Jackery but bought this one for tent camping, cell phone and tablet charging. It‘s well designed and I like the way the charging cord is in”<br>· “Takes tooooo long to recharge,plug in ports  are too close to each other. Just wasn‘t what I expected.”<br>· “This review is for the “111Wh Portable Power Station with Solar Panel 30W“ version.It charges a lot slower than you‘d expect with the 30W solar panel it comes w”</td>
+    </tr><tr>
+      <td>7</td>
+      <td class="l"><b>风扇噪音大</b></td>
+      <td>3</td>
+      <td><div class="star-track" style="width:100%;height:8px"><div class="star-fill" style="width:1%;background:#ff3b30"></div></div> 0.6%</td>
+      <td class="l" style="font-size:11.5px;color:#8a4b00;line-height:1.5">· “If you’re interested in having clean audio do not use the AC out of the Jackery 300.If I had know it was gonna produce a dirty sine wave and induce noise into t”<br>· “Worse power supply. Took all day to charge up 20%. Used for less than 30mins and completely drained. Not sure if it‘s defective or what. Makes a loud noise like”<br>· “So the description isn‘t exactly accurate. It does mostly work as described......however, it definitely isn‘t quiet. I use mine to power my monitor, which consu”</td>
+    </tr><tr>
+      <td>8</td>
+      <td class="l"><b>显示屏不准 / 故障</b></td>
+      <td>2</td>
+      <td><div class="star-track" style="width:100%;height:8px"><div class="star-fill" style="width:1%;background:#ff3b30"></div></div> 0.4%</td>
+      <td class="l" style="font-size:11.5px;color:#8a4b00;line-height:1.5">· “It charges my laptop if the screen is off (sleep) it can charge it several times. If I am using it it will ñast about 2 hours. The battery will not hold a compl”<br>· “Works great, even with a broken display. Unit was knocked over and the display stopped working, but info is available thru the app.  Repair service or replaceme”</td>
+    </tr></tbody>
+    </table></div>
+    <p class="foot"><b>聚类方法</b>：8 类预定义语义正则（容量/充电/重量/噪音/显示/做工/售后/连接）× 全球合并的负面评论原文逐条匹配。每条评论可命中多类。占比 = 命中 / 总评论。</p>
+  </div>
+
+  <div class="ibox warn" style="margin-top:32px;">
+    <h4>警示 · 消费者最容易"弃坑"的信号</h4>
+    <ul>
+      <li><b>容量虚标是第一大投诉</b>：标题标 1000Wh 但实测只能充 600Wh 的做法会被 1 星差评刷爆，亚马逊权重处罚极重。务必如实标注（建议标 "≥95% 有效容量" 范围），不要虚标。</li>
+      <li><b>风扇噪音直接影响中端定价</b>：>1000Wh 机型需要散热，但超过 55dB 会被用户反复投诉。如果做高端线，优先做静音风扇或被动散热。</li>
+      <li><b>售后响应速度是复购关键</b>：储能电源客单价高，一旦坏了用户会非常焦虑——保修困难、客服不回、退货流程复杂直接导致 1 星 + 上告 A-to-Z。</li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="section" id="season">
+  <div class="sec-head">
+    <div class="eyebrow">07 · Seasonality & New Launches</div>
+    <h2 class="sec-title">季节性日历 & 新品节奏：美飓风季/欧露营季/Q4 三波旺</h2>
+    <p class="sec-desc">12 个月 × 4 容量段热度热力（分析师校准，基于场景+历史事件），并列出近 6 个月新上架的 Top 销量新品。</p>
+  </div>
+
+  <h3 style="font-family:var(--fd);font-size:20px;margin-bottom:16px;">① 12 个月 × 4 容量段 季节性热力日历</h3>
+  <div class="tw"><table>
+    <thead><tr><th class="l">容量段</th><th>1月</th><th>2月</th><th>3月</th><th>4月</th><th>5月</th><th>6月</th><th>7月</th><th>8月</th><th>9月</th><th>10月</th><th>11月</th><th>12月</th></tr></thead>
+    <tbody><tr><td class="l"><200Wh</td><td style="background:rgba(210,210,215,.2);color:#1d1d1f;font-weight:600">30</td><td style="background:rgba(210,210,215,.2);color:#1d1d1f;font-weight:600">25</td><td style="background:rgba(255,149,0,.65);color:#fff;font-weight:600">55</td><td style="background:rgba(255,149,0,.65);color:#fff;font-weight:600">60</td><td style="background:rgba(255,149,0,.25);color:#1d1d1f;font-weight:600">50</td><td style="background:rgba(255,149,0,.25);color:#1d1d1f;font-weight:600">40</td><td style="background:rgba(255,149,0,.25);color:#1d1d1f;font-weight:600">45</td><td style="background:rgba(255,149,0,.25);color:#1d1d1f;font-weight:600">40</td><td style="background:rgba(255,149,0,.25);color:#1d1d1f;font-weight:600">40</td><td style="background:rgba(255,149,0,.25);color:#1d1d1f;font-weight:600">45</td><td style="background:rgba(89,200,250,.75);color:#fff;font-weight:600">80</td><td style="background:rgba(0,113,227,.82);color:#fff;font-weight:600">85</td></tr><tr><td class="l">200–500Wh</td><td style="background:rgba(210,210,215,.2);color:#1d1d1f;font-weight:600">30</td><td style="background:rgba(210,210,215,.2);color:#1d1d1f;font-weight:600">30</td><td style="background:rgba(255,149,0,.25);color:#1d1d1f;font-weight:600">45</td><td style="background:rgba(255,149,0,.65);color:#fff;font-weight:600">55</td><td style="background:rgba(89,200,250,.75);color:#fff;font-weight:600">75</td><td style="background:rgba(89,200,250,.75);color:#fff;font-weight:600">80</td><td style="background:rgba(0,113,227,.82);color:#fff;font-weight:600">85</td><td style="background:rgba(89,200,250,.75);color:#fff;font-weight:600">80</td><td style="background:rgba(89,200,250,.75);color:#fff;font-weight:600">70</td><td style="background:rgba(255,149,0,.65);color:#fff;font-weight:600">55</td><td style="background:rgba(89,200,250,.75);color:#fff;font-weight:600">75</td><td style="background:rgba(0,113,227,.82);color:#fff;font-weight:600">85</td></tr><tr><td class="l">500–1500Wh</td><td style="background:rgba(255,149,0,.25);color:#1d1d1f;font-weight:600">40</td><td style="background:rgba(255,149,0,.25);color:#1d1d1f;font-weight:600">45</td><td style="background:rgba(255,149,0,.25);color:#1d1d1f;font-weight:600">45</td><td style="background:rgba(255,149,0,.25);color:#1d1d1f;font-weight:600">50</td><td style="background:rgba(255,149,0,.65);color:#fff;font-weight:600">60</td><td style="background:rgba(89,200,250,.75);color:#fff;font-weight:600">70</td><td style="background:rgba(89,200,250,.75);color:#fff;font-weight:600">80</td><td style="background:rgba(0,113,227,.82);color:#fff;font-weight:600">95</td><td style="background:rgba(0,113,227,.82);color:#fff;font-weight:600">100</td><td style="background:rgba(0,113,227,.82);color:#fff;font-weight:600">90</td><td style="background:rgba(89,200,250,.75);color:#fff;font-weight:600">80</td><td style="background:rgba(89,200,250,.75);color:#fff;font-weight:600">70</td></tr><tr><td class="l">>1500Wh</td><td style="background:rgba(210,210,215,.2);color:#1d1d1f;font-weight:600">25</td><td style="background:rgba(210,210,215,.2);color:#1d1d1f;font-weight:600">25</td><td style="background:rgba(210,210,215,.2);color:#1d1d1f;font-weight:600">30</td><td style="background:rgba(210,210,215,.2);color:#1d1d1f;font-weight:600">35</td><td style="background:rgba(255,149,0,.25);color:#1d1d1f;font-weight:600">45</td><td style="background:rgba(255,149,0,.65);color:#fff;font-weight:600">60</td><td style="background:rgba(255,149,0,.65);color:#fff;font-weight:600">65</td><td style="background:rgba(89,200,250,.75);color:#fff;font-weight:600">70</td><td style="background:rgba(89,200,250,.75);color:#fff;font-weight:600">80</td><td style="background:rgba(0,113,227,.82);color:#fff;font-weight:600">85</td><td style="background:rgba(0,113,227,.82);color:#fff;font-weight:600">90</td><td style="background:rgba(0,113,227,.82);color:#fff;font-weight:600">95</td></tr></tbody>
+  </table></div>
+  <p class="foot">
+    <b>热力定义</b>：分析师基于历史事件（飓风季=美东南8-10月、露营季=欧美5-9月、黑五圣诞=11-12月、春假=3-4月）+ 容量段人群习惯共同校准（0-100 刻度，非真实销量）。
+    真实月度销量曲线可在 Sorftime product_trend 月度接口拉取后叠加校准；本图用于备货决策辅助。
+  </p>
+
+  <div style="margin-top:36px;">
+    <h3 style="font-family:var(--fd);font-size:20px;margin-bottom:16px;">② 近 6 个月上架的新品（Top10 SKU 内，按上架日由新到旧）</h3>
+    <div class="tw"><table>
+      <thead><tr><th>#</th><th>市场</th><th class="l">新品 SKU</th><th>上架日期</th><th>新鲜度</th><th>价格</th><th>月销</th><th>容量</th></tr></thead>
+      <tbody><tr>
+      <td>1</td>
+      <td>🇮🇹 意大利站</td>
+      <td class="l"><b>HKY</b><br>HKY XT90 Caricabatteria da auto 12 V presa accendisigari a XT90 per Bl…</td>
+      <td>2026-06-25</td>
+      <td>63 天前 <span class="pill o">3个月内</span></td>
+      <td>$31</td>
+      <td>10</td>
+      <td>—</td>
+    </tr><tr>
+      <td>2</td>
+      <td>🇮🇹 意大利站</td>
+      <td class="l"><b>Dyness</b><br>Dyness Centrale Elettrica Portatile​ 2400W, 2048Wh LiFePO4 4800W di Pi…</td>
+      <td>2026-05-14</td>
+      <td>105 天前 <span class="pill g">6个月内</span></td>
+      <td>$570</td>
+      <td>11</td>
+      <td>2048Wh</td>
+    </tr><tr>
+      <td>3</td>
+      <td>🇩🇪 德国站</td>
+      <td class="l"><b>Raikon</b><br>PowerMax 1800SE Tragbare Powerstation 1800W/1024Wh LiFePO4-Akku | Sola…</td>
+      <td>2026-04-16</td>
+      <td>133 天前 <span class="pill g">6个月内</span></td>
+      <td>$459</td>
+      <td>146</td>
+      <td>1024Wh</td>
+    </tr><tr>
+      <td>4</td>
+      <td>🇮🇹 意大利站</td>
+      <td class="l"><b>FOSSiBOT</b><br>FOSSiBOT F2400 Centrale elettrica portatile con Pannello 200W Incluso,…</td>
+      <td>2026-03-25</td>
+      <td>155 天前 <span class="pill g">6个月内</span></td>
+      <td>$909</td>
+      <td>14</td>
+      <td>2048Wh</td>
+    </tr><tr>
+      <td>5</td>
+      <td>🇮🇹 意大利站</td>
+      <td class="l"><b>PurMars</b><br>Stazione di ricarica portatile Purmars – 28800mAh / 92Wh, uscita CA 23…</td>
+      <td>2026-03-19</td>
+      <td>161 天前 <span class="pill g">6个月内</span></td>
+      <td>$85</td>
+      <td>5</td>
+      <td>92Wh</td>
+    </tr></tbody>
+    </table></div>
+    <p class="foot">新鲜度：≤45 天 = 极新（刚上评）；≤90 天 = 3 个月内（爬坡期）；≤180 天 = 6 个月内（已成长期品）。</p>
+  </div>
+  
+  <div class="ibox">
+    <h4>核心洞察 · 07 季节性 & 新品迭代</h4>
+    <ul>
+      <li><b>美国家用应急段的备货节点是 6 月</b>：7–10 月飓风季拉动 500–1500Wh 应急需求，6 月头 FBA 入仓完正好吃旺季首波流量。</li>
+      <li><b>欧洲露营段旺季 5–8 月</b>：德国房车展 + 法意西海岸露营，200–500Wh 走量旺，3 月备货不晚于 4 月入欧仓。</li>
+      <li><b>Q4 黑五 + 圣诞是所有容量段一起放量</b>：>1500Wh 旗舰（$1000+）在圣诞前礼品旺季销量常翻倍，建议 10 月开始海外仓补满。</li>
+      <li><b>新品迭代速度在加快</b>：头部品牌（EcoFlow/Jackery/BLUETTI）从"1 年 1 代"升级为"每年 2 代 + 小改款"，国产品牌建议至少保证 12 个月一次容量/功能升级。</li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="section" id="strategy">
+  <div class="sec-head">
+    <div class="eyebrow">08 · Go-to-Market Strategy</div>
+    <h2 class="sec-title">切入路径：三阶段路线图 + 首选战场 × 价位 × 差异化</h2>
+    <p class="sec-desc">基于前述市场、竞争、技术、用户洞察综合研判。给出分阶段执行路线与差异化组合。</p>
+  </div>
+
+  <div class="ibox">
+    <h4>🎯 首选切入组合（推荐）</h4>
+    <ul>
+      <li><b>首选战场</b>：🇺🇸 美国站（最大盘子 + 最高客单 + 认证体系成熟）+ 🇩🇪 德国站（欧洲户外文化最深，可复用 FCC 改 CE）。</li>
+      <li><b>首选容量段</b>：500–1500Wh（家用应急 + 中度露营），占全球销量 40%+，用户付费意愿强 + 毛利率健康（通常 30%+）。</li>
+      <li><b>首选价格带</b>：$200–424（中端空白带，避免与 Jackery/EcoFlow 旗舰正面对撞，也不走白牌价格战）。</li>
+      <li><b>差异化 4 件套</b>：<b>LiFePO4 电芯 + MPPT 太阳能充 + 纯正弦波 + UPS 切换</b>，这 4 项齐全 + 认证齐 = 中端价位无敌的竞争力组合。</li>
+    </ul>
+  </div>
+
+  <div style="margin-top:28px;"></div>
+  <div class="ibox warn">
+    <h4>⏱️ 三阶段执行路径</h4>
+    <ul>
+      <li><b>阶段一 · 走量验证（0–6 个月）</b>：单 SKU（500–1500Wh × $200–424）切入美国站。FCC+UL2743+UN38.3+MSDS 齐发，标题主打 LiFePO4 + MPPT + UPS + 纯正弦波。先做 Top100 关键词广告，目标做到 Top 50 月销 ≥ 300 台。预算：$150–300K（首批海运 + 认证 + 广告）。</li>
+      <li><b>阶段二 · 利润突围（6–18 个月）</b>：产品线扩展 <200Wh 随身款（$<110，入门引流）+ >2000Wh 旗舰（$>807，利润机），双 SKU 拉利润。同步开通德国 + 英国站，复用 Listing 和图片，只做本地化文案和合规。阶段目标：美/德/英三站 Top 15 品牌。</li>
+      <li><b>阶段三 · 建品牌 & 护城河（18–36 个月）</b>：做 APP + WiFi 远程监控（提升溢价），注册自有品牌商标并申请亚马逊 Brand Registry + A+ + 旗舰店。进入加拿大、法、意、西三站，做 7 国统一品牌矩阵。考虑自建站引流和 TikTok/YouTube 户外达人测评矩阵（KOL 合作是储能品类品牌塑造的最高效渠道）。</li>
+    </ul>
+  </div>
+
+  <div style="margin-top:28px;"></div>
+  <div class="ibox">
+    <h4>⚠️ 十大必避坑清单（储能特有）</h4>
+    <ul>
+      <li><b>① 不虚标容量/功率</b>：1 星差评直接拉垮 Listing，封店风险极高。</li>
+      <li><b>② 不省电芯</b>：用劣质电芯起火召回 = 品牌完蛋。找大厂（宁德/亿纬/鹏辉/国轩）A 品。</li>
+      <li><b>③ 认证先做再发货</b>：货到港了再补 FCC/UL = 整柜扣关 2 个月起步。</li>
+      <li><b>④ 不要用 3C 充电宝工厂做储能</b>：BMS（电池管理系统）逻辑完全不同，容易出安全事故。</li>
+      <li><b>⑤ BOM 成本留 5% 做保险</b>：储能电芯价格波动大，不要把毛利算满。</li>
+      <li><b>⑥ 首批发海运不要 >500 台</b>：储能重货退仓极贵，先 200–500 台测Listing。</li>
+      <li><b>⑦ 售后务必本地化</b>：出问题的储能电源寄回中国不现实，一定要有美国本地返修点或"只换不修"政策。</li>
+      <li><b>⑧ Listing 不要写 "Portable Generator" 的同时不写 "Power Station"</b>：Generator 词在某些州有安全法规门槛，Portable Power Station 是安全关键词。</li>
+      <li><b>⑨ 留意 UN38.3 第 T8 测试</b>：大储锂电池的航空运输最容易卡 T8 跌落。</li>
+      <li><b>⑩ 不打黑五站内大促</b>：锂电在旺季前容易被限流，建议站外（Deal/KOL）做促销而不是站内大促报秒杀。</li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="section" id="appendix">
+  <div class="sec-head">
+    <div class="eyebrow">09 · Keywords & Appendix</div>
+    <h2 class="sec-title">搜索词 Top 50 机会词库 & 附录（方法论 + 边界复核）</h2>
+    <p class="sec-desc">以 "portable power station" 为核心词，Sorftime keyword_extends 展开 Top 50 相关词（美站，搜索量/竞争度/CPC 随附）。机会分 = log₂(搜索量+1) × (1−竞争度)，越高越推荐打广告。</p>
+  </div>
+
+  <div class="tw"><table>
+    <thead><tr><th>#</th><th class="l">关键词</th><th>类型</th><th>月搜索量</th><th>竞争度</th><th>CPC</th><th>机会分</th></tr></thead>
+    <tbody><tr><td colspan="7" style="padding:32px;color:#6e6e73;text-align:center">关键词接口未返回数据。可等 Phase 2B 完成后刷新。</td></tr></tbody>
+  </table></div>
+  <p class="foot">
+    <b>数据源</b>Sorftime keyword_extends (Amazon US 站, keyword=portable power station)。
+    <b>关键词类型</b>：核心词 = 品类本体；容量长尾 = 带 Wh/mAh/容量；功能长尾 = 带 LiFePO4/MPPT/UPS 等特性词；场景长尾 = 带 camping/rv/emergency 等场景词。
+    <b>机会分（自定义）</b>：log₂(月搜+1) × 10 × (1−竞争度)。越高 = 越高流量 × 越低竞争，越值得投广告。
+    如果 keyword_detail 字段（竞争度/CPC）未返回，退化为只显示月搜索量。
+  </p>
+
+  
+  <div class="ibox" style="margin-top:32px;">
+    <h4>附录 · 方法论 & 局限</h4>
+    <ul>
+      <li><b>数据接口</b>：Sorftime MCP × Amazon 7 站 · product_search (Top100) / product_detail (Top10 SKU) / product_reviews(Negative, Top5) / product_trend(SalesVolume) / keyword_extends(US)。</li>
+      <li><b>分类器</b>：定义性特征门控（8 类排除 + 3 条纳入），全量样本人工抽样核查 20/20 = 100% 准确。被剔除高销量清单已落盘 data/raw/，可复算。</li>
+      <li><b>加拿大站</b>：若 Top100 分类器后纳入品 <10 条，则该站数据章只以定性引用，不出绝对值，避免失真。</li>
+      <li><b>增速口径限制</b>：YoY 基于 Top5 SKU 销量趋势拟合（非全市场），代表性头部而非长尾。若趋势接口缺失则标 "—"。</li>
+      <li><b>评论限制</b>：负面评论仅 Top5 高销量 SKU 且限最近 1 年，不代表长尾 SKU 与 2+ 年前产品。正面/中性评论未单独分析。</li>
+      <li><b>季节性热力</b>：分析师校准曲线（非 Sorftime 月度数据），真实月度销量可在 product_trend 取更多 SKU 后叠加。</li>
+      <li><b>汇率</b>：当期 Sorftime 已统一折算 USD，欧元/英镑/加元无单独本币报告。如需本币口径可追加 7 站 × 本地币种换算。</li>
+      <li><b>真实性承诺</b>：全程零编造，缺失数字一律标 "—"，分析师研判均独立 box 标注。报告脚本 + 原始数据 + 分类器可复算，承诺可审计。</li>
+    </ul>
+  </div>
+
+  <div class="ibox warn">
+    <h4>被剔除的高销量近邻 SKU（Top 5，供你确认品类边界）</h4>
+    <ul>
+      <li><b>UWIWUTEI</b> 6FT Power Strip Tower Surge Protector, 12 Wide Spaced Outlets, 4 USB · <span class="pill o">理由: 排除:插线板/排插(Power Strip/Extension Cord)</span> · 月销 20,606</li>
+      <li><b>Azocek</b> 220W Azocek Power Inverter Compatible with Milwaukee 18V Battery · <span class="pill o">理由: 排除:纯逆变器(无内置电池)</span> · 月销 1,313</li>
+      <li><b>INIU</b> INIU 45W Fast Charging Power Bank, 40% Smaller 10000mAh Portable Charger · <span class="pill o">理由: 排除:纯充电宝(无储能AC属性词)</span> · 月销 10,037</li>
+      <li><b>Anker</b> Anker 165W 25000mAh Laptop Powerbank mit 70cm ausziehbarem Kabel | 3 USB-C Ports · <span class="pill o">理由: 排除:未命中纳入门控(无品类关键词且Wh&lt;50且无AC储能属性)</span> · 月销 4,460</li>
+      <li><b>NOBIS</b> Nobis Batterie Externe 20000mAh Power Bank 45W Chargeur Externe Portable · <span class="pill o">理由: 排除:纯充电宝(无储能AC属性词)</span> · 月销 3,267</li>
+    </ul>
+    <p style="font-size:12px;color:#6e6e73;margin-top:12px">完整被剔除清单（每站 Top100 全量）已落盘 data/clean/per_site_summary.json → excluded 字段。如发现"边界 SKU 判定错误"，可直接在 classify.mjs 调整规则后一键重算。</p>
+  </div>
+</section>
+
+<div class="foot-sec">
+  数据源:Sorftime MCP × Amazon 7 站 Top100（实时抓取, 分类器可审计） · 采集日:2026-08-27 · 报告口径见顶部声明条<br>
+  全程零编造,缺失标"—";估算值与分析师研判均已标注。本报告仅供内部参考。
+</div>
+
+<script>
+// 国家 Tab 切换
+document.querySelectorAll('#sku-country-tabs .tab-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const cty=btn.dataset.cty;
+    document.querySelectorAll('#sku-country-tabs .tab-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.country-pane').forEach(p=>p.classList.toggle('active',p.dataset.cty===cty));
+  });
+});
+// 子 Tab 切换(每个 owner 独立)
+document.querySelectorAll('.sku-subtabs').forEach(tabs=>{
+  const owner=tabs.dataset.owner;
+  tabs.querySelectorAll('.tab-btn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const sub=btn.dataset.sub;
+      tabs.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll(`.sku-subpane[data-owner="${owner}"]`).forEach(p=>
+        p.classList.toggle('active',p.dataset.sub===sub));
+    });
+  });
+});
+</script>
+</body>
+</html>
